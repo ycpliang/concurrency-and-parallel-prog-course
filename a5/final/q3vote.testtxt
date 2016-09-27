@@ -1,0 +1,500 @@
+UserInterface Test
+============================================
+
+Script started on Sun Nov 22 16:34:09 2015
+1%>ubuntu1204-004:~/cs343/a5/a5q3> ./vote
+Voter0	Voter1	Voter2	Voter3	Voter4	Voter5
+=======	=======	=======	=======	=======	=======
+S						
+V p						
+B 1			S			
+			V p			
+		S	B 2			
+		V s				
+		C				
+...	...	F 0	...	...	...	
+U 1						
+F 0	...	...	...	...	...	
+			U 0			
+...	...	...	F 0	...	...	
+				S		
+				V s		
+				B 1	S	
+					V p	
+	S				B 2	
+	V s					
+	C					
+...	F 1	...	...	...	...	
+				U 1		
+...	...	...	...	F 1	...	
+					U 0	
+...	...	...	...	...	F 1	
+=================
+All tours started
+
+**********************************************************
+*** This is a Test of no parameter to see if the default 
+*** value for the size of tour is 6 and Size of Group is 3
+*** As it can be seen, there are 6 voters and 2 groups of 3
+*** since there are three people with F 0 and 3 with F 0
+**********************************************************
+
+1%>ubuntu1204-004:~/cs343/a5/a5q3> ./vote 1
+size of Tour is smaller than Size of Group
+1%>ubuntu1204-004:~/cs343/a5/a5q3> ./vote 2
+size of Tour is smaller than Size of Group
+***********************************************************
+*******Check to see if you Size Of Tour can be smaller ****
+*******than size of group, which is default in this case***
+***********************************************************
+
+1%>ubuntu1204-004:~/cs343/a5/a5q3> ./vote 4
+group not evenly divisible
+1%>ubuntu1204-004:~/cs343/a5/a5q3> ./vote 5 3
+group not evenly divisible
+1%>ubuntu1204-004:~/cs343/a5/a5q3> ./vote 6 2
+sizeOfGroup not odd
+***************************************************************
+**Check to see if none evenly divisible groups can be formed***
+***************************************************************
+
+1%>ubuntu1204-004:~/cs343/a5/a4q3> ./vote 3
+Voter0	Voter1	Voter2
+=======	=======	=======
+	S		
+	V p		
+	B 1	S	
+		V s	
+S		B 2	
+V s			
+C			
+F 1	...	...	
+	U 1		
+...	F 1	...	
+		U 0	
+...	...	F 1	
+=================
+All tours started
+
+*****************************************************************
+****See if only one valid parameter works. As it can be seen,****
+****it works, and the size of each group defaults to 3
+*****************************************************************
+
+1%>ubuntu1204-004:~/cs343/a5/a5q3> ./vote 4 2
+sizeOfGroup not odd
+*****************************************************************
+****See if only one valid parameter works. As it can be seen,****
+****it works, and the size of each group defaults to 3***********
+*****************************************************************
+
+1%>ubuntu1204-004:~/cs343/a5/a5q3> ./vote 5 5
+Voter0	Voter1	Voter2	Voter3	Voter4
+=======	=======	=======	=======	=======
+S					
+V p					
+B 1		S			
+		V p			
+		B 2		S	
+				V s	
+	S			B 3	
+	V p				
+	B 4		S		
+			V s		
+			C		
+...	...	...	F 0	...	
+U 3					
+F 0	...	...	...	...	
+		U 2			
+...	...	F 0	...	...	
+				U 1	
+...	...	...	...	F 0	
+	U 0				
+...	F 0	...	...	...	
+=================
+All tours started
+
+*****************************************************************
+****Check if seed is not specified still works, and also this****
+****test that all voters belong to the same group. As it can*****
+****be seen, all voter finished with the same result, and each***
+****voter blocked or complete as the final state*****************
+*****************************************************************
+
+1%>ubuntu1204-004:~/cs343/a5/a5q3> ./vote 6 3 2 1
+wrong number of parameter
+1%>ubuntu1204-004:~/cs343/a5/a5q3> ./vote 6 3 2 1 2
+wrong number of parameter
+
+*****************************************************************
+****Testing to see if extra parameter will output a usage error**
+*****************************************************************
+
+1%>ubuntu1204-004:~/cs343/a5/a5q3> ./vote -1 3 2
+paramater 1 error
+1%>ubuntu1204-004:~/cs343/a5/a5q3> ./vote 5 -1 2
+paramater 2 error
+1%>ubuntu1204-004:~/cs343/a5/a5q3> ./vote 5 3 -1
+paramater 3 error
+1%>ubuntu1204-004:~/cs343/a5/a5q3> ./vote 5 -1 -1
+paramater 3 error
+
+*****************************************************************
+*Testing to see if negative parameter will output a usage error**
+*****************************************************************
+
+
+Algorithm Test
+============================================
+
+1%>ubuntu1204-002:~/cs343/a5/a5q3> make TYPE=EXT
+1%>ubuntu1204-002:~/cs343/a5/a5q3> ./vote 15 3 2
+Voter0	Voter1	Voter2	Voter3	Voter4	Voter5	Voter6	Voter7	Voter8	Voter9	Voter10	Voter11	Voter12	Voter13	Voter14
+=======	=======	=======	=======	=======	=======	=======	=======	=======	=======	=======	=======	=======	=======	=======
+				S											
+				V s											
+				B 1						S					
+										V p					
+						S				B 2					
+						V s									
+						C									
+...	...	...	...	...	...	F 1	...	...	...	...	...	...	...	...	
+										U 1					
+...	...	...	...	...	...	...	...	...	...	F 1	...	...	...	...	
+				U 0				S							
+...	...	...	...	F 1	...	...	...	...	...	...	...	...	...	...	
+								V s							
+								B 1	S						
+									V p						
+		S							B 2						
+		V p													
+		C													
+...	...	F 0	...	...	...	...	...	...	...	...	...	...	...	...	
+									U 1						
+...	...	...	...	...	...	...	...	...	F 0	...	...	...	...	...	
+S								U 0				S			
+...	...	...	...	...	...	...	...	F 0	...	...	...	...	...	...	
+												V p			
+V s												B 1			
+B 2													S		
+													V s		
+													C		
+...	...	...	...	...	...	...	...	...	...	...	...	...	F 1	...	
+U 1															
+F 1	...	...	...	...	...	...	...	...	...	...	...	...	...	...	
+			S									U 0			
+...	...	...	...	...	...	...	...	...	...	...	...	F 1	...	...	
+			V s												
+			B 1				S								
+							V s								
+							B 2							S	
+														V p	
+														C	
+...	...	...	...	...	...	...	...	...	...	...	...	...	...	F 1	
+					S		U 1								
+...	...	...	...	...	...	...	F 1	...	...	...	...	...	...	...	
+	S		U 0								S				
+...	...	...	F 1	...	...	...	...	...	...	...	...	...	...	...	
+					V p										
+	V p				B 1										
+	B 2										V s				
+											C				
+...	...	...	...	...	...	...	...	...	...	...	F 0	...	...	...	
+	U 1														
+...	F 0	...	...	...	...	...	...	...	...	...	...	...	...	...	
+					U 0										
+...	...	...	...	...	F 0	...	...	...	...	...	...	...	...	...	
+=================
+All tours started
+
+********************************************************************
+*As it can be seen, the program terminates, suggesting that all*****
+*votes are casted, Each voter that started will vote right after****
+*unless an entire group finish which can context switch and another*
+*voter start before the finish statement is printed. ***************
+*Each vote blocks and output the correct number blocked voters******
+*Each vote unblocks and finishes right after, and the number of*****
+*voters still waiting decrements. The last person output complete***
+*state and Finished. Each finished also puts '...' on all other*****
+*voters.  Five individual group are also created, which each group**
+*signal another group to go. No barging is observed because all*****
+*voters in the same group finish before another voter starts********
+*Only five voter are in Start state before a group finish***********
+********************************************************************
+
+
+1%>ubuntu1204-002:~/cs343/a5/a5q3> make TYPE=INT
+1%>ubuntu1204-002:~/cs343/a5/a5q3> ./vote 15 3 2
+Voter0	Voter1	Voter2	Voter3	Voter4	Voter5	Voter6	Voter7	Voter8	Voter9	Voter10	Voter11	Voter12	Voter13	Voter14
+=======	=======	=======	=======	=======	=======	=======	=======	=======	=======	=======	=======	=======	=======	=======
+				S											
+				V s											
+				B 1						S					
+										V p					
+						S				B 2					
+						V s									
+						C									
+...	...	...	...	...	...	F 1	...	...	...	...	...	...	...	...	
+				U 1											
+...	...	...	...	F 1	...	...	...	...	...	...	...	...	...	...	
+								S		U 0					
+...	...	...	...	...	...	...	...	...	...	F 1	...	...	...	...	
+								V s							
+								B 1	S						
+									V p						
+		S							B 2						
+		V p													
+		C													
+...	...	F 0	...	...	...	...	...	...	...	...	...	...	...	...	
+								U 1							
+...	...	...	...	...	...	...	...	F 0	...	...	...	...	...	...	
+S									U 0			S			
+...	...	...	...	...	...	...	...	...	F 0	...	...	...	...	...	
+												V p			
+V s												B 1			
+B 2													S		
+													V s		
+													C		
+...	...	...	...	...	...	...	...	...	...	...	...	...	F 1	...	
+												U 1			
+...	...	...	...	...	...	...	...	...	...	...	...	F 1	...	...	
+U 0			S												
+F 1	...	...	...	...	...	...	...	...	...	...	...	...	...	...	
+			V s												
+			B 1				S								
+							V s								
+							B 2							S	
+														V p	
+														C	
+...	...	...	...	...	...	...	...	...	...	...	...	...	...	F 1	
+			U 1		S										
+...	...	...	F 1	...	...	...	...	...	...	...	...	...	...	...	
+	S						U 0				S				
+...	...	...	...	...	...	...	F 1	...	...	...	...	...	...	...	
+					V p										
+	V p				B 1										
+	B 2										V s				
+											C				
+...	...	...	...	...	...	...	...	...	...	...	F 0	...	...	...	
+					U 1										
+...	...	...	...	...	F 0	...	...	...	...	...	...	...	...	...	
+	U 0														
+...	F 0	...	...	...	...	...	...	...	...	...	...	...	...	...	
+=================
+All tours started
+
+********************************************************************
+*Internal scheduling produced the identical result as external,***** 
+*except for The unblock order which is the reverse, this is not***** 
+*barging since the unblocking order does create baring since******** 
+*they all belong to the same group**********************************
+********************************************************************
+
+
+1%>ubuntu1204-002:~/cs343/a5/a5q3> make clean
+1%>ubuntu1204-002:~/cs343/a5/a5q3> make TYPE=INTB
+1%>ubuntu1204-002:~/cs343/a5/a5q3> ./vote 15 3 2
+Voter0	Voter1	Voter2	Voter3	Voter4	Voter5	Voter6	Voter7	Voter8	Voter9	Voter10	Voter11	Voter12	Voter13	Voter14
+=======	=======	=======	=======	=======	=======	=======	=======	=======	=======	=======	=======	=======	=======	=======
+				S											
+				V s											
+				B 1						S					
+										V p					
+						S				B 2					
+						V s									
+						C									
+...	...	...	...	...	...	F 1	...	...	...	...	...	...	...	...	
+										U 1					
+...	...	...	...	...	...	...	...	...	...	F 1	...	...	...	...	
+				U 0				S							
+...	...	...	...	F 1	...	...	...	...	...	...	...	...	...	...	
+								V p							
+								B 1	S						
+									V p						
+		S							B 2						
+		V s													
+		C													
+...	...	F 0	...	...	...	...	...	...	...	...	...	...	...	...	
+									U 1						
+...	...	...	...	...	...	...	...	...	F 0	...	...	...	...	...	
+S												S			
+								U 0				b			
+...	...	...	...	...	...	...	...	F 0	...	...	...	...	...	...	
+												V s			
+V p												B 1	S		
+B 2													V s		
+													C		
+...	...	...	...	...	...	...	...	...	...	...	...	...	F 1	...	
+U 1			S												
+F 1	...	...	...	...	...	...	...	...	...	...	...	...	...	...	
+												U 0			
+...	...	...	...	...	...	...	...	...	...	...	...	F 1	...	...	
+			V p				S							S	
+	S		B 1		S		V s								
+							B 2				S			V p	
+														C	
+...	...	...	...	...	...	...	...	...	...	...	...	...	...	F 0	
+							U 1								
+...	...	...	...	...	...	...	F 0	...	...	...	...	...	...	...	
+			U 0												
+...	...	...	F 0	...	...	...	...	...	...	...	...	...	...	...	
+					V p										
+	V s				B 1										
+	B 2										V s				
+											C				
+...	...	...	...	...	...	...	...	...	...	...	F 1	...	...	...	
+	U 1														
+...	F 1	...	...	...	...	...	...	...	...	...	...	...	...	...	
+					U 0										
+...	...	...	...	...	F 1	...	...	...	...	...	...	...	...	...	
+=================
+All tours started
+
+************************************************************************
+*Java monitor produced the identical result as external and internal****
+*scheduling suggesting this voting is correct. As you can also see******
+*from voter 12, bargers are blocked and the barging state is printed****
+*I did notice there are a lot less bargers than the sample solution*****
+*Nonetheless, there is no error with the voting. Thus, I assume*********
+*it has to do with rand() that is used in the wait routine. Alot less***
+bargers.****************************************************************
+************************************************************************
+
+
+1%>ubuntu1204-002:~/cs343/a5/a5q3> make TYPE=AUTO
+1%>ubuntu1204-002:~/cs343/a5/a5q3> ./vote 15 3 2
+Voter0	Voter1	Voter2	Voter3	Voter4	Voter5	Voter6	Voter7	Voter8	Voter9	Voter10	Voter11	Voter12	Voter13	Voter14
+=======	=======	=======	=======	=======	=======	=======	=======	=======	=======	=======	=======	=======	=======	=======
+				S											
+				V s											
+				B 1						S					
+										V p					
+						S				B 2					
+						V s									
+						C									
+...	...	...	...	...	...	F 1	...	...	...	...	...	...	...	...	
+				U 1											
+...	...	...	...	F 1	...	...	...	...	...	...	...	...	...	...	
+								S		U 0					
+...	...	...	...	...	...	...	...	...	...	F 1	...	...	...	...	
+								V s							
+								B 1	S						
+									V p						
+		S							B 2						
+		V p													
+		C													
+...	...	F 0	...	...	...	...	...	...	...	...	...	...	...	...	
+S								U 1				S			
+...	...	...	...	...	...	...	...	F 0	...	...	...	...	...	...	
+									U 0						
+...	...	...	...	...	...	...	...	...	F 0	...	...	...	...	...	
+												V p			
+V s												B 1			
+B 2			S										S		
+													V s		
+													C		
+...	...	...	...	...	...	...	...	...	...	...	...	...	F 1	...	
+												U 1			
+...	...	...	...	...	...	...	...	...	...	...	...	F 1	...	...	
+U 0							S								
+F 1	...	...	...	...	...	...	...	...	...	...	...	...	...	...	
+			V s		S									S	
+	S		B 1				V s								
+							B 2				S			V p	
+														C	
+...	...	...	...	...	...	...	...	...	...	...	...	...	...	F 1	
+			U 1												
+...	...	...	F 1	...	...	...	...	...	...	...	...	...	...	...	
+							U 0								
+...	...	...	...	...	...	...	F 1	...	...	...	...	...	...	...	
+					V p										
+	V p				B 1										
+	B 2										V s				
+											C				
+...	...	...	...	...	...	...	...	...	...	...	F 0	...	...	...	
+					U 1										
+...	...	...	...	...	F 0	...	...	...	...	...	...	...	...	...	
+	U 0														
+...	F 0	...	...	...	...	...	...	...	...	...	...	...	...	...	
+=================
+All tours started
+
+*************************************************************************
+*Automatic-signal monitor produced the identical result as external,***** 
+*and internal, except for The unblock order which is the reverse,******** 
+*this is not barging since the unblocking order does create barging****** 
+since they all belong to the same group. As viewed, the unblock happens**
+after the blocking statement.********************************************
+*************************************************************************
+
+1%>ubuntu1204-002:~/cs343/a5/a5q3> make TYPE=TASK
+1%>ubuntu1204-002:~/cs343/a5/a5q3> ./vote 15 3 2
+Voter0	Voter1	Voter2	Voter3	Voter4	Voter5	Voter6	Voter7	Voter8	Voter9	Voter10	Voter11	Voter12	Voter13	Voter14
+=======	=======	=======	=======	=======	=======	=======	=======	=======	=======	=======	=======	=======	=======	=======
+				S											
+				V s											
+				B 1						S					
+										V p					
+						S				B 2					
+						V s									
+						B 3									
+				U 2		C		S							
+...	...	...	...	F 1	...	...	...	...	...	...	...	...	...	...	
+										U 1					
+...	...	...	...	...	...	...	...	...	...	F 1	...	...	...	...	
+		S				U 0			S						
+...	...	...	...	...	...	F 1	...	...	...	...	...	...	...	...	
+S								V s				S			
+								B 1	V p						
+		V p							B 2				S		
+		B 3													
+		C	S					U 2							
+...	...	...	...	...	...	...	...	F 0	...	...	...	...	...	...	
+									U 1						
+...	...	...	...	...	...	...	...	...	F 0	...	...	...	...	...	
+		U 0													
+...	...	F 0	...	...	...	...	...	...	...	...	...	...	...	...	
+	S				S		S					V p		S	
+V s											S	B 1			
+B 2													V s		
+													B 3		
+												U 2	C		
+...	...	...	...	...	...	...	...	...	...	...	...	F 1	...	...	
+U 1															
+F 1	...	...	...	...	...	...	...	...	...	...	...	...	...	...	
+													U 0		
+...	...	...	...	...	...	...	...	...	...	...	...	...	F 1	...	
+			V s												
+			B 1				V s								
+							B 2							V p	
+														B 3	
+			U 2											C	
+...	...	...	F 1	...	...	...	...	...	...	...	...	...	...	...	
+							U 1								
+...	...	...	...	...	...	...	F 1	...	...	...	...	...	...	...	
+														U 0	
+...	...	...	...	...	...	...	...	...	...	...	...	...	...	F 1	
+					V p										
+	V p				B 1										
+	B 2										V s				
+											B 3				
+					U 2						C				
+...	...	...	...	...	F 0	...	...	...	...	...	...	...	...	...	
+	U 1														
+...	F 0	...	...	...	...	...	...	...	...	...	...	...	...	...	
+											U 0				
+...	...	...	...	...	...	...	...	...	...	...	F 0	...	...	...	
+=================
+All tours started
+
+
+*************************************************************************
+*As seen, task is a bit different than the other monitors, but as********
+*you can see all voter block and they unblock in the same order as they**
+*are blocked. there is no barging since after is printed, voting happens*
+*a lot later when it is scheduled(seen at voter 11 and 14).**************
+*Since all group terminates, task functions as it should*****************
+*************************************************************************
+1%>ubuntu1204-004:~/cs343/a4/a4q2> exit
+exit
+Script done on Sun Nov 22 18:36:56 2015

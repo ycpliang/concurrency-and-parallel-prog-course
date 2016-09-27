@@ -1,0 +1,39 @@
+//orignal with catchResume, NO OPTIMIZATION
+ubuntu1204-004:~/cs343/a1/q2> time ./NOOUTCORRECT 100 100 8000
+100 100 100
+25.221u 0.027s 0:25.27 99.8%    0+0k 0+0io 0pf+0w
+
+
+//fixup routines, NO OPTIMIZATION
+ubuntu1204-004:~/cs343/a1/q2> time ./NOOUTMINE 100 100 8000
+100 100 100
+29.526u 0.012s 0:29.56 99.8%    0+0k 0+0io 0pf+0w
+
+
+//orignal with catchResume, OPTIMIZED
+ubuntu1204-004:~/cs343/a1/q2> time ./optNOOUTCORRECT 100 100 8000
+100 100 100
+16.785u 0.027s 0:16.83 99.8%    0+0k 0+0io 0pf+0w
+
+
+//fixup routines, OPTIMIZED
+ubuntu1204-004:~/cs343/a1/q2> time ./optNOOUTMINE 100 100 8000
+100 100 100
+12.348u 0.011s 0:12.37 99.8%    0+0k 0+0io 0pf+0w
+
+
+The observed performance difference is that catchResume is more
+efficient than fixup routines when there is no optimization.
+
+However the fixup routine seems to be more efficient than catchResume
+when compiler optimization is turned on.
+
+I believe the reason that catchResume is more efficient that lambda functions
+is that the stack is shared with its local function with lambda functions
+have its own stack and local variables.
+
+The optimization however made lambda functions more efficient might be the 
+result of simplification of the fixup routine. Compilers are able the simplify
+the function call by remove the neccessity for its local stack. Thus, instead
+of transfering control back to the catchResume, control remains solely in the
+fixup routine. 

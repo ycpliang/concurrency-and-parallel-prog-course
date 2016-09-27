@@ -1,0 +1,60 @@
+Script started on Wed Nov 11 13:33:52 2015
+
+
+Compilation command line
+------------------------------------------------------------
+1%>ubuntu1204-002:~/cs343/a4/a4q1> u++ -O2 -multi -nodebug q1.cc -o stack
+1%>ubuntu1204-002:~/cs343/a4/a4q1> u++ -O2 -multi -nodebug -DHEAP q1.cc -o heap
+
+
+Compare User time and Real Time
+------------------------------------------------------------
+1%>ubuntu1204-002:~/cs343/a4/a4q1> /usr/bin/time -f "\t%E real, \t%U user,\t%S sys" ./stack 1 2000000000
+	0:07.16 real, 	7.17 user,	0.01 sys
+1%>ubuntu1204-002:~/cs343/a4/a4q1> /usr/bin/time -f "\t%E real, \t%U user,\t%S sys" ./heap 1 100000000
+	0:12.89 real, 	12.92 user,	0.02 sys
+
+*********************************************************************
+As it can be seen, user time is a tiny bit smaller than Real Time
+which suggest most the execution time is the execution of user code
+*********************************************************************
+
+
+Heap and stack Comparision
+------------------------------------------------------------
+1%>ubuntu1204-002:~/cs343/a4/a4q1> /usr/bin/time -f "\t%E real, \t%U user,\t%S sys" ./stack 1 2000000000
+	0:07.16 real, 	7.17 user,	0.01 sys
+1%>ubuntu1204-002:~/cs343/a4/a4q1> /usr/bin/time -f "\t%E real, \t%U user,\t%S sys" ./heap 1 100000000
+	0:12.89 real, 	12.92 user,	0.02 sys
+1%>ubuntu1204-002:~/cs343/a4/a4q1> /usr/bin/time -f "\t%E real, \t%U user,\t%S sys" ./stack 2 2000000000
+	0:08.05 real, 	15.51 user,	0.08 sys
+1%>ubuntu1204-002:~/cs343/a4/a4q1> /usr/bin/time -f "\t%E real, \t%U user,\t%S sys" ./heap 2 8000000
+	0:11.37 real, 	22.60 user,	0.07 sys
+1%>ubuntu1204-002:~/cs343/a4/a4q1> /usr/bin/time -f "\t%E real, \t%U user,\t%S sys" ./stack 4 2000000000
+	0:07.49 real, 	29.42 user,	0.07 sys
+1%>ubuntu1204-002:~/cs343/a4/a4q1> /usr/bin/time -f "\t%E real, \t%U user,\t%S sys" ./heap 4 6000000
+	0:16.37 real, 	62.11 user,	0.11 sys
+
+
+******************************************************************************************************
+As it can be observed, the stack allocated variable have a smaller runtime than
+heap allocated variable, even at when the number of iteration for heap is much smaller than stack.
+
+With increased number of task, it can also be observed that there is almost not Real time change
+when variables are stack allocked, while there is an observed increase in Real time when there
+are more tasks running. Even at a smaller iteration , more task for heap allocation 
+still increase in runtime. 
+******************************************************************************************************
+
+******************************************************************************************************
+The perfomance difference is
+- each task needs to run two extra line of code new and delete
+- stack uses temporal and spatial locality which makes access faster; therefore, it might be more 
+  likely to be in the L1 cache. 
+
+******************************************************************************************************
+
+1%>ubuntu1204-002:~/cs343/a4/a4q1> exit
+exit
+
+Script done on Wed Nov 11 13:51:43 2015

@@ -1,0 +1,4 @@
+This is an example of a deadlock, as the angles are waiting for 
+the other angel across from them to look away. Thus, there is 
+a circulation on wait for resources to be free. In the case of 
+the video, it is for the other one to look away. 

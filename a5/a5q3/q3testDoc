@@ -1,0 +1,453 @@
+Script started on Sun Nov 22 16:34:09 2015
+1%>ubuntu1204-002:[1m~/cs343/a5/a5q3[0m> make TYPE=EXT
+echo "IMPLTYPE=EXT" > ImplType
+sleep 1
+u++					 -g -multi -Wall -Wno-unused-label -MMD -O2 -DIMPLTYPE_"EXT"   -c -o q3main.o q3main.cc
+uC++ Version 6.1.0 (multiple processor) (debug) (no yield) (no verify) (no profile)
+u++					 -g -multi -Wall -Wno-unused-label -MMD -O2 -DIMPLTYPE_"EXT"   -c -o q3voter.o q3voter.cc
+uC++ Version 6.1.0 (multiple processor) (debug) (no yield) (no verify) (no profile)
+u++					 -g -multi -Wall -Wno-unused-label -MMD -O2 -DIMPLTYPE_"EXT"   -c -o q3tallyVotesEXT.o q3tallyVotesEXT.cc
+uC++ Version 6.1.0 (multiple processor) (debug) (no yield) (no verify) (no profile)
+u++					 -g -multi -Wall -Wno-unused-label -MMD -O2 -DIMPLTYPE_"EXT"   -c -o q3printer.o q3printer.cc
+uC++ Version 6.1.0 (multiple processor) (debug) (no yield) (no verify) (no profile)
+u++					 -g -multi -Wall -Wno-unused-label -MMD -O2 -DIMPLTYPE_"EXT" q3main.o q3voter.o q3tallyVotesEXT.o q3printer.o -o vote
+uC++ Version 6.1.0 (multiple processor) (debug) (no yield) (no verify) (no profile)
+1%>ubuntu1204-002:[1m~/cs343/a5/a5q3[0m> ./vote 15 3 2
+Voter0	Voter1	Voter2	Voter3	Voter4	Voter5	Voter6	Voter7	Voter8	Voter9	Voter10	Voter11	Voter12	Voter13	Voter14
+=======	=======	=======	=======	=======	=======	=======	=======	=======	=======	=======	=======	=======	=======	=======
+				S											
+				V s											
+				B 1						S					
+										V p					
+						S				B 2					
+						V s									
+						C									
+...	...	...	...	...	...	F 1	...	...	...	...	...	...	...	...	
+										U 1					
+...	...	...	...	...	...	...	...	...	...	F 1	...	...	...	...	
+				U 0				S							
+...	...	...	...	F 1	...	...	...	...	...	...	...	...	...	...	
+								V s							
+								B 1	S						
+									V p						
+		S							B 2						
+		V p													
+		C													
+...	...	F 0	...	...	...	...	...	...	...	...	...	...	...	...	
+									U 1						
+...	...	...	...	...	...	...	...	...	F 0	...	...	...	...	...	
+S								U 0				S			
+...	...	...	...	...	...	...	...	F 0	...	...	...	...	...	...	
+												V p			
+V s												B 1			
+B 2													S		
+													V s		
+													C		
+...	...	...	...	...	...	...	...	...	...	...	...	...	F 1	...	
+U 1															
+F 1	...	...	...	...	...	...	...	...	...	...	...	...	...	...	
+			S									U 0			
+...	...	...	...	...	...	...	...	...	...	...	...	F 1	...	...	
+			V s												
+			B 1				S								
+							V s								
+							B 2							S	
+														V p	
+														C	
+...	...	...	...	...	...	...	...	...	...	...	...	...	...	F 1	
+					S		U 1								
+...	...	...	...	...	...	...	F 1	...	...	...	...	...	...	...	
+	S		U 0								S				
+...	...	...	F 1	...	...	...	...	...	...	...	...	...	...	...	
+					V p										
+	V p				B 1										
+	B 2										V s				
+											C				
+...	...	...	...	...	...	...	...	...	...	...	F 0	...	...	...	
+	U 1														
+...	F 0	...	...	...	...	...	...	...	...	...	...	...	...	...	
+					U 0										
+...	...	...	...	...	F 0	...	...	...	...	...	...	...	...	...	
+=================
+All tours started
+1%>ubuntu1204-002:[1m~/cs343/a5/a5q3[0m> ./vote [K[K[K[K[K[Kmake vo[K[KTYPE=INT
+rm -f ImplType
+touch q2tallyVotes.h
+sleep 1
+make vote TYPE="INT"
+make[1]: Entering directory `/u9/ycpliang/cs343/a5/a5q3'
+echo "IMPLTYPE=INT" > ImplType
+sleep 1
+make[1]: Leaving directory `/u9/ycpliang/cs343/a5/a5q3'
+make[1]: Entering directory `/u9/ycpliang/cs343/a5/a5q3'
+u++					 -g -multi -Wall -Wno-unused-label -MMD -O2 -DIMPLTYPE_"INT"   -c -o q3tallyVotesINT.o q3tallyVotesINT.cc
+uC++ Version 6.1.0 (multiple processor) (debug) (no yield) (no verify) (no profile)
+u++					 -g -multi -Wall -Wno-unused-label -MMD -O2 -DIMPLTYPE_"INT" q3main.o q3voter.o q3tallyVotesINT.o q3printer.o -o vote
+uC++ Version 6.1.0 (multiple processor) (debug) (no yield) (no verify) (no profile)
+make[1]: Leaving directory `/u9/ycpliang/cs343/a5/a5q3'
+1%>ubuntu1204-002:[1m~/cs343/a5/a5q3[0m> m[K./vote 13[K[K15 3 2
+Voter0	Voter1	Voter2	Voter3	Voter4	Voter5	Voter6	Voter7	Voter8	Voter9	Voter10	Voter11	Voter12	Voter13	Voter14
+=======	=======	=======	=======	=======	=======	=======	=======	=======	=======	=======	=======	=======	=======	=======
+				S											
+				V s											
+				B 1						S					
+										V p					
+						S				B 2					
+						V s									
+						C									
+...	...	...	...	...	...	F 1	...	...	...	...	...	...	...	...	
+				U 1											
+...	...	...	...	F 1	...	...	...	...	...	...	...	...	...	...	
+								S		U 0					
+...	...	...	...	...	...	...	...	...	...	F 1	...	...	...	...	
+								V s							
+								B 1	S						
+									V p						
+		S							B 2						
+		V p													
+		C													
+...	...	F 0	...	...	...	...	...	...	...	...	...	...	...	...	
+								U 1							
+...	...	...	...	...	...	...	...	F 0	...	...	...	...	...	...	
+S									U 0			S			
+...	...	...	...	...	...	...	...	...	F 0	...	...	...	...	...	
+												V p			
+V s												B 1			
+B 2													S		
+													V s		
+													C		
+...	...	...	...	...	...	...	...	...	...	...	...	...	F 1	...	
+												U 1			
+...	...	...	...	...	...	...	...	...	...	...	...	F 1	...	...	
+U 0			S												
+F 1	...	...	...	...	...	...	...	...	...	...	...	...	...	...	
+			V s												
+			B 1				S								
+							V s								
+							B 2							S	
+														V p	
+														C	
+...	...	...	...	...	...	...	...	...	...	...	...	...	...	F 1	
+			U 1		S										
+...	...	...	F 1	...	...	...	...	...	...	...	...	...	...	...	
+	S						U 0				S				
+...	...	...	...	...	...	...	F 1	...	...	...	...	...	...	...	
+					V p										
+	V p				B 1										
+	B 2										V s				
+											C				
+...	...	...	...	...	...	...	...	...	...	...	F 0	...	...	...	
+					U 1										
+...	...	...	...	...	F 0	...	...	...	...	...	...	...	...	...	
+	U 0														
+...	F 0	...	...	...	...	...	...	...	...	...	...	...	...	...	
+^CuC++ Runtime error (UNIX pid:33649) Application interrupted by a termination signal.
+Error occurred while executing task uProcessorTask (0x1055920) in coroutine uProcessorKernel (0x105fca0).
+Abort (core dumped)
+1%>ubuntu1204-002:[1m~/cs343/a5/a5q3[0m> make T[K[K[K[K[Kmake clean
+rm -f *.d *.o  vote				 ImplType
+1%>ubuntu1204-002:[1m~/cs343/a5/a5q3[0m> make TYPE=15[K[KINT
+echo "IMPLTYPE=INT" > ImplType
+sleep 1
+u++					 -g -multi -Wall -Wno-unused-label -MMD -O2 -DIMPLTYPE_"INT"   -c -o q3main.o q3main.cc
+uC++ Version 6.1.0 (multiple processor) (debug) (no yield) (no verify) (no profile)
+u++					 -g -multi -Wall -Wno-unused-label -MMD -O2 -DIMPLTYPE_"INT"   -c -o q3voter.o q3voter.cc
+uC++ Version 6.1.0 (multiple processor) (debug) (no yield) (no verify) (no profile)
+u++					 -g -multi -Wall -Wno-unused-label -MMD -O2 -DIMPLTYPE_"INT"   -c -o q3tallyVotesINT.o q3tallyVotesINT.cc
+uC++ Version 6.1.0 (multiple processor) (debug) (no yield) (no verify) (no profile)
+u++					 -g -multi -Wall -Wno-unused-label -MMD -O2 -DIMPLTYPE_"INT"   -c -o q3printer.o q3printer.cc
+uC++ Version 6.1.0 (multiple processor) (debug) (no yield) (no verify) (no profile)
+u++					 -g -multi -Wall -Wno-unused-label -MMD -O2 -DIMPLTYPE_"INT" q3main.o q3voter.o q3tallyVotesINT.o q3printer.o -o vote
+uC++ Version 6.1.0 (multiple processor) (debug) (no yield) (no verify) (no profile)
+1%>ubuntu1204-002:[1m~/cs343/a5/a5q3[0m> ./vote 15 3 2
+Voter0	Voter1	Voter2	Voter3	Voter4	Voter5	Voter6	Voter7	Voter8	Voter9	Voter10	Voter11	Voter12	Voter13	Voter14
+=======	=======	=======	=======	=======	=======	=======	=======	=======	=======	=======	=======	=======	=======	=======
+				S											
+				V s											
+				B 1						S					
+										V p					
+						S				B 2					
+						V s									
+						C									
+...	...	...	...	...	...	F 1	...	...	...	...	...	...	...	...	
+				U 1											
+...	...	...	...	F 1	...	...	...	...	...	...	...	...	...	...	
+								S		U 0					
+...	...	...	...	...	...	...	...	...	...	F 1	...	...	...	...	
+								V s							
+								B 1	S						
+									V p						
+		S							B 2						
+		V p													
+		C													
+...	...	F 0	...	...	...	...	...	...	...	...	...	...	...	...	
+								U 1							
+...	...	...	...	...	...	...	...	F 0	...	...	...	...	...	...	
+S									U 0			S			
+...	...	...	...	...	...	...	...	...	F 0	...	...	...	...	...	
+												V p			
+V s												B 1			
+B 2													S		
+													V s		
+													C		
+...	...	...	...	...	...	...	...	...	...	...	...	...	F 1	...	
+												U 1			
+...	...	...	...	...	...	...	...	...	...	...	...	F 1	...	...	
+U 0			S												
+F 1	...	...	...	...	...	...	...	...	...	...	...	...	...	...	
+			V s												
+			B 1				S								
+							V s								
+							B 2							S	
+														V p	
+														C	
+...	...	...	...	...	...	...	...	...	...	...	...	...	...	F 1	
+			U 1		S										
+...	...	...	F 1	...	...	...	...	...	...	...	...	...	...	...	
+	S						U 0				S				
+...	...	...	...	...	...	...	F 1	...	...	...	...	...	...	...	
+					V p										
+	V p				B 1										
+	B 2										V s				
+											C				
+...	...	...	...	...	...	...	...	...	...	...	F 0	...	...	...	
+					U 1										
+...	...	...	...	...	F 0	...	...	...	...	...	...	...	...	...	
+	U 0														
+...	F 0	...	...	...	...	...	...	...	...	...	...	...	...	...	
+=================
+All tours started
+1%>ubuntu1204-002:[1m~/cs343/a5/a5q3[0m> make clean
+rm -f *.d *.o  vote				 ImplType
+1%>ubuntu1204-002:[1m~/cs343/a5/a5q3[0m> .[Kmake TYPE=INTB
+echo "IMPLTYPE=INTB" > ImplType
+sleep 1
+u++					 -g -multi -Wall -Wno-unused-label -MMD -O2 -DIMPLTYPE_"INTB"   -c -o q3main.o q3main.cc
+uC++ Version 6.1.0 (multiple processor) (debug) (no yield) (no verify) (no profile)
+u++					 -g -multi -Wall -Wno-unused-label -MMD -O2 -DIMPLTYPE_"INTB"   -c -o q3voter.o q3voter.cc
+uC++ Version 6.1.0 (multiple processor) (debug) (no yield) (no verify) (no profile)
+u++					 -g -multi -Wall -Wno-unused-label -MMD -O2 -DIMPLTYPE_"INTB"   -c -o q3tallyVotesINTB.o q3tallyVotesINTB.cc
+uC++ Version 6.1.0 (multiple processor) (debug) (no yield) (no verify) (no profile)
+u++					 -g -multi -Wall -Wno-unused-label -MMD -O2 -DIMPLTYPE_"INTB"   -c -o q3printer.o q3printer.cc
+uC++ Version 6.1.0 (multiple processor) (debug) (no yield) (no verify) (no profile)
+u++					 -g -multi -Wall -Wno-unused-label -MMD -O2 -DIMPLTYPE_"INTB" q3main.o q3voter.o q3tallyVotesINTB.o q3printer.o -o vote
+uC++ Version 6.1.0 (multiple processor) (debug) (no yield) (no verify) (no profile)
+1%>ubuntu1204-002:[1m~/cs343/a5/a5q3[0m> ./vote 15 3 2
+Voter0	Voter1	Voter2	Voter3	Voter4	Voter5	Voter6	Voter7	Voter8	Voter9	Voter10	Voter11	Voter12	Voter13	Voter14
+=======	=======	=======	=======	=======	=======	=======	=======	=======	=======	=======	=======	=======	=======	=======
+				S											
+				V s											
+				B 1						S					
+										V p					
+						S				B 2					
+						V s									
+						C									
+...	...	...	...	...	...	F 1	...	...	...	...	...	...	...	...	
+										U 1					
+...	...	...	...	...	...	...	...	...	...	F 1	...	...	...	...	
+				U 0				S							
+...	...	...	...	F 1	...	...	...	...	...	...	...	...	...	...	
+								V p							
+								B 1	S						
+									V p						
+		S							B 2						
+		V s													
+		C													
+...	...	F 0	...	...	...	...	...	...	...	...	...	...	...	...	
+									U 1						
+...	...	...	...	...	...	...	...	...	F 0	...	...	...	...	...	
+S												S			
+								U 0				b			
+...	...	...	...	...	...	...	...	F 0	...	...	...	...	...	...	
+												V s			
+V p												B 1	S		
+B 2													V s		
+													C		
+...	...	...	...	...	...	...	...	...	...	...	...	...	F 1	...	
+U 1			S												
+F 1	...	...	...	...	...	...	...	...	...	...	...	...	...	...	
+												U 0			
+...	...	...	...	...	...	...	...	...	...	...	...	F 1	...	...	
+			V p				S							S	
+	S		B 1		S		V s								
+							B 2				S			V p	
+														C	
+...	...	...	...	...	...	...	...	...	...	...	...	...	...	F 0	
+							U 1								
+...	...	...	...	...	...	...	F 0	...	...	...	...	...	...	...	
+			U 0												
+...	...	...	F 0	...	...	...	...	...	...	...	...	...	...	...	
+					V p										
+	V s				B 1										
+	B 2										V s				
+											C				
+...	...	...	...	...	...	...	...	...	...	...	F 1	...	...	...	
+	U 1														
+...	F 1	...	...	...	...	...	...	...	...	...	...	...	...	...	
+					U 0										
+...	...	...	...	...	F 1	...	...	...	...	...	...	...	...	...	
+=================
+All tours started
+1%>ubuntu1204-002:[1m~/cs343/a5/a5q3[0m> make TYPE=AT[KUTP[Ko[KO
+rm -f ImplType
+touch q2tallyVotes.h
+sleep 1
+make vote TYPE="AUTO"
+make[1]: Entering directory `/u9/ycpliang/cs343/a5/a5q3'
+echo "IMPLTYPE=AUTO" > ImplType
+sleep 1
+make[1]: Leaving directory `/u9/ycpliang/cs343/a5/a5q3'
+make[1]: Entering directory `/u9/ycpliang/cs343/a5/a5q3'
+u++					 -g -multi -Wall -Wno-unused-label -MMD -O2 -DIMPLTYPE_"AUTO"   -c -o q3tallyVotesAUTO.o q3tallyVotesAUTO.cc
+uC++ Version 6.1.0 (multiple processor) (debug) (no yield) (no verify) (no profile)
+u++					 -g -multi -Wall -Wno-unused-label -MMD -O2 -DIMPLTYPE_"AUTO" q3main.o q3voter.o q3tallyVotesAUTO.o q3printer.o -o vote
+uC++ Version 6.1.0 (multiple processor) (debug) (no yield) (no verify) (no profile)
+make[1]: Leaving directory `/u9/ycpliang/cs343/a5/a5q3'
+1%>ubuntu1204-002:[1m~/cs343/a5/a5q3[0m> ./vote 15 3 2
+Voter0	Voter1	Voter2	Voter3	Voter4	Voter5	Voter6	Voter7	Voter8	Voter9	Voter10	Voter11	Voter12	Voter13	Voter14
+=======	=======	=======	=======	=======	=======	=======	=======	=======	=======	=======	=======	=======	=======	=======
+				S											
+				V s											
+				B 1						S					
+										V p					
+						S				B 2					
+						V s									
+						C									
+...	...	...	...	...	...	F 1	...	...	...	...	...	...	...	...	
+				U 1											
+...	...	...	...	F 1	...	...	...	...	...	...	...	...	...	...	
+								S		U 0					
+...	...	...	...	...	...	...	...	...	...	F 1	...	...	...	...	
+								V s							
+								B 1	S						
+									V p						
+		S							B 2						
+		V p													
+		C													
+...	...	F 0	...	...	...	...	...	...	...	...	...	...	...	...	
+S								U 1				S			
+...	...	...	...	...	...	...	...	F 0	...	...	...	...	...	...	
+									U 0						
+...	...	...	...	...	...	...	...	...	F 0	...	...	...	...	...	
+												V p			
+V s												B 1			
+B 2			S										S		
+													V s		
+													C		
+...	...	...	...	...	...	...	...	...	...	...	...	...	F 1	...	
+												U 1			
+...	...	...	...	...	...	...	...	...	...	...	...	F 1	...	...	
+U 0							S								
+F 1	...	...	...	...	...	...	...	...	...	...	...	...	...	...	
+			V s		S									S	
+	S		B 1				V s								
+							B 2				S			V p	
+														C	
+...	...	...	...	...	...	...	...	...	...	...	...	...	...	F 1	
+			U 1												
+...	...	...	F 1	...	...	...	...	...	...	...	...	...	...	...	
+							U 0								
+...	...	...	...	...	...	...	F 1	...	...	...	...	...	...	...	
+					V p										
+	V p				B 1										
+	B 2										V s				
+											C				
+...	...	...	...	...	...	...	...	...	...	...	F 0	...	...	...	
+					U 1										
+...	...	...	...	...	F 0	...	...	...	...	...	...	...	...	...	
+	U 0														
+...	F 0	...	...	...	...	...	...	...	...	...	...	...	...	...	
+=================
+All tours started
+1%>ubuntu1204-002:[1m~/cs343/a5/a5q3[0m> make TYPE=TASK
+rm -f ImplType
+touch q2tallyVotes.h
+sleep 1
+make vote TYPE="TASK"
+make[1]: Entering directory `/u9/ycpliang/cs343/a5/a5q3'
+echo "IMPLTYPE=TASK" > ImplType
+sleep 1
+make[1]: Leaving directory `/u9/ycpliang/cs343/a5/a5q3'
+make[1]: Entering directory `/u9/ycpliang/cs343/a5/a5q3'
+u++					 -g -multi -Wall -Wno-unused-label -MMD -O2 -DIMPLTYPE_"TASK"   -c -o q3tallyVotesTASK.o q3tallyVotesTASK.cc
+uC++ Version 6.1.0 (multiple processor) (debug) (no yield) (no verify) (no profile)
+u++					 -g -multi -Wall -Wno-unused-label -MMD -O2 -DIMPLTYPE_"TASK" q3main.o q3voter.o q3tallyVotesTASK.o q3printer.o -o vote
+uC++ Version 6.1.0 (multiple processor) (debug) (no yield) (no verify) (no profile)
+make[1]: Leaving directory `/u9/ycpliang/cs343/a5/a5q3'
+1%>ubuntu1204-002:[1m~/cs343/a5/a5q3[0m> make clean
+rm -f *.d *.o  vote				 ImplType
+1%>ubuntu1204-002:[1m~/cs343/a5/a5q3[0m> make TYPE=TASK
+echo "IMPLTYPE=TASK" > ImplType
+sleep 1
+u++					 -g -multi -Wall -Wno-unused-label -MMD -O2 -DIMPLTYPE_"TASK"   -c -o q3main.o q3main.cc
+uC++ Version 6.1.0 (multiple processor) (debug) (no yield) (no verify) (no profile)
+u++					 -g -multi -Wall -Wno-unused-label -MMD -O2 -DIMPLTYPE_"TASK"   -c -o q3voter.o q3voter.cc
+uC++ Version 6.1.0 (multiple processor) (debug) (no yield) (no verify) (no profile)
+u++					 -g -multi -Wall -Wno-unused-label -MMD -O2 -DIMPLTYPE_"TASK"   -c -o q3tallyVotesTASK.o q3tallyVotesTASK.cc
+uC++ Version 6.1.0 (multiple processor) (debug) (no yield) (no verify) (no profile)
+u++					 -g -multi -Wall -Wno-unused-label -MMD -O2 -DIMPLTYPE_"TASK"   -c -o q3printer.o q3printer.cc
+uC++ Version 6.1.0 (multiple processor) (debug) (no yield) (no verify) (no profile)
+u++					 -g -multi -Wall -Wno-unused-label -MMD -O2 -DIMPLTYPE_"TASK" q3main.o q3voter.o q3tallyVotesTASK.o q3printer.o -o vote
+uC++ Version 6.1.0 (multiple processor) (debug) (no yield) (no verify) (no profile)
+1%>ubuntu1204-002:[1m~/cs343/a5/a5q3[0m> ./vote 15 3 2
+Voter0	Voter1	Voter2	Voter3	Voter4	Voter5	Voter6	Voter7	Voter8	Voter9	Voter10	Voter11	Voter12	Voter13	Voter14
+=======	=======	=======	=======	=======	=======	=======	=======	=======	=======	=======	=======	=======	=======	=======
+				S											
+				V s											
+				B 1						S					
+										V p					
+						S				B 2					
+						V s									
+						B 3									
+				U 2		C		S							
+...	...	...	...	F 1	...	...	...	...	...	...	...	...	...	...	
+										U 1					
+...	...	...	...	...	...	...	...	...	...	F 1	...	...	...	...	
+		S				U 0			S						
+...	...	...	...	...	...	F 1	...	...	...	...	...	...	...	...	
+S								V s				S			
+								B 1	V p						
+		V p							B 2				S		
+		B 3													
+		C	S					U 2							
+...	...	...	...	...	...	...	...	F 0	...	...	...	...	...	...	
+									U 1						
+...	...	...	...	...	...	...	...	...	F 0	...	...	...	...	...	
+		U 0													
+...	...	F 0	...	...	...	...	...	...	...	...	...	...	...	...	
+	S				S		S					V p		S	
+V s											S	B 1			
+B 2													V s		
+													B 3		
+												U 2	C		
+...	...	...	...	...	...	...	...	...	...	...	...	F 1	...	...	
+U 1															
+F 1	...	...	...	...	...	...	...	...	...	...	...	...	...	...	
+													U 0		
+...	...	...	...	...	...	...	...	...	...	...	...	...	F 1	...	
+			V s												
+			B 1				V s								
+							B 2							V p	
+														B 3	
+			U 2											C	
+...	...	...	F 1	...	...	...	...	...	...	...	...	...	...	...	
+							U 1								
+...	...	...	...	...	...	...	F 1	...	...	...	...	...	...	...	
+														U 0	
+...	...	...	...	...	...	...	...	...	...	...	...	...	...	F 1	
+					V p										
+	V p				B 1										
+	B 2										V s				
+											B 3				
+					U 2						C				
+...	...	...	...	...	F 0	...	...	...	...	...	...	...	...	...	
+	U 1														
+...	F 0	...	...	...	...	...	...	...	...	...	...	...	...	...	
+											U 0				
+...	...	...	...	...	...	...	...	...	...	...	F 0	...	...	...	
+=================
+All tours started
+1%>ubuntu1204-002:[1m~/cs343/a5/a5q3[0m> exit
+exit
+
+Script done on Sun Nov 22 16:36:56 2015

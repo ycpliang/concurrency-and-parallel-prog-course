@@ -1,0 +1,31 @@
+Script started on Tue Oct 13 20:07:29 2015
+1%>ubuntu1204-004:~/cs343/a2/q2> ./c
+cardgame*        correctCardgame* 
+1%>ubuntu1204-004:~/cs343/a2/q2> ./cardgame 1 1 > t1.out
+1%>ubuntu1204-004:~/cs343/a2/q2> ./correctCardgame 1 1 > t2.out
+1%>ubuntu1204-004:~/cs343/a2/q2> diff t1.out t2.out
+1%>ubuntu1204-004:~/cs343/a2/q2> diff t1.out t2.out./correctCardgame 2 > t1.out
+1%>ubuntu1204-004:~/cs343/a2/q2> ./cardgame 1 2 > t1.outdiff t1.out t2.out./correctCardgame 1 1 >1.outscript./cardgame 1 1 > t1.outor2
+1%>ubuntu1204-004:~/cs343/a2/q2> ./correctCardgame 1 2 > t2.out1.outdiff t1.out t2.out
+1%>ubuntu1204-004:~/cs343/a2/q2> diff t1.out t2.out./correctCardgam2 2 > t1.out
+1%>ubuntu1204-004:~/cs343/a2/q2> ./cardgame 2 2 > t1.outdiff t1.out t2.out./correctCa2
+1%>ubuntu1204-004:~/cs343/a2/q2> ./correctCardgame 2 2 > t2.out1.outdiff t1.out t2.out
+1%>ubuntu1204-004:~/cs343/a2/q2> diff t1.out t2.out./correctCardgame 3 > t1.out
+1%>ubuntu1204-004:~/cs343/a2/q2> ./cardgame 2 3 > t1.outdiff t1.out t2.out./correctCard3
+1%>ubuntu1204-004:~/cs343/a2/q2> ./correctCardgame 2 3 > t2.out1.outdiff t1.out t2.out
+1%>ubuntu1204-004:~/cs343/a2/q2> diff t1.out t2.out./correctCardgam60 4 > t1.out
+1%>ubuntu1204-004:~/cs343/a2/q2> ./cardgame 60 4 > t1.outdiff t1.out t2.out./correctCa60 4
+1%>ubuntu1204-004:~/cs343/a2/q2> ./correctCardgame 60 4 > t2.out1.outdiff t1.out t2.out
+1%>ubuntu1204-004:~/cs343/a2/q2> diff t1.out t2.out./correctCardgam100 30 
+1%>ubuntu1204-004:~/cs343/a2/q2> ./cardgame 100 30 > t1.outdiff t1.out t2.out./correctCa100 30
+1%>ubuntu1204-004:~/cs343/a2/q2> ./correctCardgame 100 30 > t2.out1.outdiff t1.out t2.out
+1%>ubuntu1204-004:~/cs343/a2/q2> diff t1.out t2.out./correctCardgame 10244 > t1.out
+1%>ubuntu1204-004:~/cs343/a2/q2> ./cardgame 100 244 > t1.outdiff t1.out t2.out./correctCardga244
+1%>ubuntu1204-004:~/cs343/a2/q2> ./correctCardgame 100 244 > t2.out1.outdiff t1.out t2.out
+1%>ubuntu1204-004:~/cs343/a2/q2> diff t1.out t2.out./correctCardgame 1054
+1%>ubuntu1204-004:~/cs343/a2/q2> ./cardgame 100 544 > t1.outdiff t1.out t2.out./correctCardga5
+1%>ubuntu1204-004:~/cs343/a2/q2> ./correctCardgame 100 544 > t2.out1.outdiff t1.out t2.out
+1%>ubuntu1204-004:~/cs343/a2/q2> exit
+exit
+
+Script done on Tue Oct 13 20:10:17 2015

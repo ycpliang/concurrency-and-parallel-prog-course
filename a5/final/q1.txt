@@ -1,0 +1,54 @@
+Script started on Sat Nov 21 23:13:51 2015
+
+compile
+--------------
+1%>ubuntu1204-002:~/cs343/a5/a5q1> u++ -O2 -multi -nodebug q1.cc -o noDefine
+1%>ubuntu1204-002:~/cs343/a5/a5q1> u++ -O2 -multi -nodebug -DPAD q1.cc -o defined
+
+
+
+Timing
+------------------
+1%>ubuntu1204-002:~/cs343/a5/a5q1> /usr/bin/time -f "\t%E real, \t%U user,\t%S sys" ./noDefine 400000000
+0x62fc10 0x62fc08 0x62fc00 0x62fbf8 
+500000000
+500000000
+	0:09.16 real, 	17.67 user,	0.03 sys
+1%>ubuntu1204-002:~/cs343/a5/a5q1> /usr/bin/time -f "\t%E real, \t%U user,\t%S sys" ./defined 8000000000
+0x62fcc0 0x62fc80 0x62fc40 0x62fc00 
+3000000000
+3000000000
+	0:10.13 real, 	20.04 user,	0.06 sys
+
+
+
+******************************************************************************************************
+It is noticible that with PAD defined, the running time is a lot faster. I believe this is the result
+of false sharing. When PAD is define, the associative cache will have only one variable loaded 
+in each cache line at a time. Thus, when one variable changes, only one variable is implicitly 
+copied from memory to cache. This is a lot better because, if PAD(padding) is not defined each, 
+each time it have to read both counter1 and counter2 even though only one variable might change.
+
+This can be verified by looking at the address associated with the variable. As seen, without PAD the
+variable are 8 bytes apart which means they are in the same cache line, while PAD defined makes
+each variable appear on different cache lines.
+******************************************************************************************************
+  
+*******************************************************************************************************
+Since it is on the stack, the address gets smaller with each variable declared. When PAD is not define
+the address count down with a seperation of 8 bytes which is the size of each variable.
+However, when PAD is defined, the address decrements by 0X40 which is 64 bytes. Thus, extra padding is
+added at the end of every global stack variable.
+*******************************************************************************************************
+
+*******************************************************************************************************
+there is implicit cast when cout pointers, however there exist no conversion for volatile pointer
+variable; thus, it uses implicit cast to bool. Therefore, if you wish to print the address, then you 
+need to explicitly cast the variable.
+*******************************************************************************************************
+
+
+1%>ubuntu1204-002:~/cs343/a5/a5q1> exit
+exit
+
+Script done on Sat Nov 21 23:17:33 2015

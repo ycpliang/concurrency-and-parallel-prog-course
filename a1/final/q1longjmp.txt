@@ -1,0 +1,43 @@
+
+//Runtime with throw and catch with no optimization
+ubuntu1204-004:~/cs343/a1/q1> time ./NOOUTCORRECT 50 25 30
+50 25 30 5
+0
+75.811u 0.000s 1:15.85 99.9%    0+0k 0+0io 0pf+0w
+
+
+//Runtime with longjmp/setjmp with no optimization
+ubuntu1204-004:~/cs343/a1/q1> time ./NOOUTMINE 50 25 30
+50 25 30 5
+0
+5.852u 0.003s 0:05.86 99.8%     0+0k 0+0io 0pf+0w
+
+
+//Runtime with throw and catch with optimization
+ubuntu1204-004:~/cs343/a1/q1> time ./optNOOUTCORRECT 50 25 30
+50 25 30 5
+0
+89.088u 0.004s 1:29.14 99.9%    0+0k 0+0io 0pf+0w
+
+
+//Runtime with longjmp/setjmp with optimization
+ubuntu1204-004:~/cs343/a1/q1> time ./optNOOUTMINE  50 25 30
+50 25 30 5
+0
+5.534u 0.011s 0:05.55 99.8%     0+0k 0+0io 0pf+0w
+
+As seen, the throw/catch is much less efficient than setjmp and longjmp.
+With optimization, there seems to be a slight decrease in the efficiency
+of throw and catch.
+
+I speculate setjmp and longjmp directly translates to labels in assembly 
+language, while try and catch will require checks and jump back. 
+Also, try and catch create two additional stacks, 
+and it is wound and unwound regularly, 
+and also more costly especially when exception arent raised often.
+
+The optimatization make throw and catch even slower possibly because
+the assembly code expands because it tries to find common code and try
+block decrease the number of stack unwinding, but more catch blocks are
+formed as a result.
+

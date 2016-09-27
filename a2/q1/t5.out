@@ -1,0 +1,74 @@
+-1
+THE ITH
+sort0
+The numbered 0
+ 1pivot: 1i: 0
+THE ITH
+sort0
+2 pivot: 1i: 1
+booleans set00
+NOT SENTINEL
+greater 
+sort2
+The numbered 2
+ 1pivot: 3i: 2
+THE ITH
+sort0
+NOT SENTINEL
+greater 
+sort2
+2 pivot: 3i: 3
+booleans set00
+NOT SENTINEL
+greater 
+sort4
+The numbered 4
+ 1pivot: 5i: 4
+DONE SET
+sort0
+ 2 booleans set101
+sentinel 
+signal done1
+exit
+ITH RETRIEVE 0
+OWN VALUE1and # 0
+sort2
+ 2 booleans set301
+sentinel 
+signal done3
+exit
+retrieve#0
+retrieved: 1
+ITH RETRIEVE 1
+right sent
+pppr
+OWN VALUE3and # 2
+sort4
+2 pivot: 5i: 5
+booleans set00
+ 2 booleans set500
+sentinel 
+signal done5
+exit
+retrieve#2
+K 3 number 0
+retrieve#0
+retrieved: 3
+ITH RETRIEVE 2
+right sent
+pppr
+OWN VALUE5and # 4
+retrieve#4
+K 5 number 2
+retrieve#2
+K 5 number 0
+retrieve#0
+retrieved: 5
+ITH RETRIEVE 3
+TERMINATING
+retrieve#4
+TERMINATING
+retrieve#2
+TERMINATING
+retrieve#0
+retrieved: -1

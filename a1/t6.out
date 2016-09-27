@@ -1,0 +1,1270 @@
+4 6 35223 5
+p1 4 6
+p8 4 6
+p9 4 6
+p1 4 5
+p8 4 5
+p9 4 5
+p1 4 4
+p8 4 4
+p9 4 4
+p1 4 3
+p8 4 3
+p9 4 3
+p1 4 2
+p8 4 2
+p9 4 2
+p1 4 1
+p8 4 1
+p9 4 1
+p1 4 0
+p3 4 0
+value b: 413092284
+did not throw b 4 0
+p4 4 0
+p5 4 0
+p1 3 1
+p8 3 1
+p9 3 1
+p1 3 0
+p3 3 0
+value b: 534605864
+did not throw b 3 0
+p4 3 0
+p5 3 0
+p1 2 1
+p8 2 1
+p9 2 1
+p1 2 0
+p3 2 0
+value b: 319996712
+did not throw b 2 0
+p4 2 0
+p5 2 0
+p1 1 1
+p8 1 1
+p9 1 1
+p1 1 0
+p3 1 0
+value b: 321479938
+did not throw b 1 0
+p4 1 0
+p5 1 0
+p1 0 1
+p2 0 1
+value a: 594747900
+p6 1 0
+E1 1 0
+p7 1 0
+p12 1 0
+p1 0 0
+p2 0 0
+value a: 181347780
+p10 1 1
+E2 1 1
+p11 1 1
+p12 1 1
+p1 1 0
+p3 1 0
+value b: 463991022
+did not throw b 1 0
+p4 1 0
+p5 1 0
+p1 0 1
+p2 0 1
+value a: 1332072250
+p6 1 0
+E1 1 0
+p7 1 0
+p12 1 0
+p1 2 0
+p3 2 0
+value b: 1010908542
+did not throw b 2 0
+p4 2 0
+p5 2 0
+p1 1 1
+p8 1 1
+p9 1 1
+p1 1 0
+p3 1 0
+value b: 2058712680
+p10 1 1
+E2 1 1
+p11 1 1
+p12 1 1
+p1 3 0
+p3 3 0
+value b: 1111102536
+did not throw b 3 0
+p4 3 0
+p5 3 0
+p1 2 1
+p8 2 1
+p9 2 1
+p1 2 0
+p3 2 0
+value b: 791962994
+did not throw b 2 0
+p4 2 0
+p5 2 0
+p1 1 1
+p8 1 1
+p9 1 1
+p1 1 0
+p3 1 0
+value b: 1195617707
+did not throw b 1 0
+p4 1 0
+p5 1 0
+p1 0 1
+p2 0 1
+value a: 1856080724
+a did not throw 
+p1 0 2
+p2 0 2
+value a: 1945711068
+a did not throw 
+p1 1 3
+p8 1 3
+p9 1 3
+p1 1 2
+p8 1 2
+p9 1 2
+p1 1 1
+p8 1 1
+p9 1 1
+p1 1 0
+p3 1 0
+value b: 1599817611
+did not throw b 1 0
+p4 1 0
+p5 1 0
+p1 0 1
+p2 0 1
+value a: 938944770
+p6 1 0
+E1 1 0
+p7 1 0
+p12 1 0
+p1 0 0
+p2 0 0
+value a: 1421005398
+a did not throw 
+p1 0 1
+p2 0 1
+value a: 2103476560
+p10 1 2
+E2 1 2
+p11 1 2
+p12 1 2
+p1 0 0
+p2 0 0
+value a: 1994952673
+a did not throw 
+p1 3 1
+p8 3 1
+p9 3 1
+p1 3 0
+p3 3 0
+value b: 1977156140
+p10 3 1
+E2 3 1
+p11 3 1
+p12 3 1
+p1 3 0
+p3 3 0
+value b: 558490411
+did not throw b 3 0
+p4 3 0
+p5 3 0
+p1 2 1
+p8 2 1
+p9 2 1
+p1 2 0
+p3 2 0
+value b: 94693711
+did not throw b 2 0
+p4 2 0
+p5 2 0
+p1 1 1
+p8 1 1
+p9 1 1
+p1 1 0
+p3 1 0
+value b: 777790202
+did not throw b 1 0
+p4 1 0
+p5 1 0
+p1 0 1
+p2 0 1
+value a: 919769783
+a did not throw 
+p1 0 2
+p2 0 2
+value a: 1847754967
+a did not throw 
+p1 1 3
+p8 1 3
+p9 1 3
+p1 1 2
+p8 1 2
+p9 1 2
+p1 1 1
+p8 1 1
+p9 1 1
+p1 1 0
+p3 1 0
+value b: 392401788
+did not throw b 1 0
+p4 1 0
+p5 1 0
+p1 0 1
+p2 0 1
+value a: 582372544
+a did not throw 
+p1 0 2
+p2 0 2
+value a: 529211305
+p10 1 1
+E2 1 1
+p11 1 1
+p12 1 1
+p1 0 0
+p2 0 0
+value a: 1284883116
+a did not throw 
+p1 0 1
+p2 0 1
+value a: 746429169
+a did not throw 
+p1 3 2
+p8 3 2
+p9 3 2
+p1 3 1
+p8 3 1
+p9 3 1
+p1 3 0
+p3 3 0
+value b: 942303589
+did not throw b 3 0
+p4 3 0
+p5 3 0
+p1 2 1
+p8 2 1
+p9 2 1
+p1 2 0
+p3 2 0
+value b: 1819488980
+p10 2 1
+E2 2 1
+p11 2 1
+p12 2 1
+p1 2 0
+p3 2 0
+value b: 1066425881
+did not throw b 2 0
+p4 2 0
+p5 2 0
+p1 1 1
+p8 1 1
+p9 1 1
+p1 1 0
+p3 1 0
+value b: 1263783527
+did not throw b 1 0
+p4 1 0
+p5 1 0
+p1 0 1
+p2 0 1
+value a: 266753232
+a did not throw 
+p1 0 2
+p2 0 2
+value a: 1247773661
+a did not throw 
+p1 2 3
+p8 2 3
+p9 2 3
+p1 2 2
+p8 2 2
+p9 2 2
+p1 2 1
+p8 2 1
+p9 2 1
+p1 2 0
+p3 2 0
+value b: 1727774550
+p10 2 1
+E2 2 1
+p11 2 1
+p12 2 1
+p1 1 0
+p3 1 0
+value b: 1598825482
+did not throw b 1 0
+p4 1 0
+p5 1 0
+p1 0 1
+p2 0 1
+value a: 111198555
+p6 1 0
+E1 1 0
+p7 1 0
+p12 1 0
+p1 1 0
+p3 1 0
+value b: 1639003582
+did not throw b 1 0
+p4 1 0
+p5 1 0
+p1 0 1
+p2 0 1
+value a: 562444371
+a did not throw 
+p1 3 2
+p8 3 2
+p9 3 2
+p1 3 1
+p8 3 1
+p9 3 1
+p1 3 0
+p3 3 0
+value b: 903161549
+did not throw b 3 0
+p4 3 0
+p5 3 0
+p1 2 1
+p8 2 1
+p9 2 1
+p1 2 0
+p3 2 0
+value b: 687137641
+did not throw b 2 0
+p4 2 0
+p5 2 0
+p1 1 1
+p8 1 1
+p9 1 1
+p1 1 0
+p3 1 0
+value b: 271041447
+did not throw b 1 0
+p4 1 0
+p5 1 0
+p1 0 1
+p2 0 1
+value a: 701388970
+p6 1 0
+E1 1 0
+p7 1 0
+p12 1 0
+p1 0 0
+p2 0 0
+value a: 139471605
+p10 1 1
+E2 1 1
+p11 1 1
+p12 1 1
+p1 1 0
+p3 1 0
+value b: 1209986217
+did not throw b 1 0
+p4 1 0
+p5 1 0
+p1 0 1
+p2 0 1
+value a: 2122394368
+a did not throw 
+p1 2 2
+p8 2 2
+p9 2 2
+p1 2 1
+p8 2 1
+p9 2 1
+p1 2 0
+p3 2 0
+value b: 95464517
+did not throw b 2 0
+p4 2 0
+p5 2 0
+p1 1 1
+p8 1 1
+p9 1 1
+p1 1 0
+p3 1 0
+value b: 1057455242
+did not throw b 1 0
+p4 1 0
+p5 1 0
+p1 0 1
+p2 0 1
+value a: 1952066860
+p6 1 0
+E1 1 0
+p7 1 0
+p12 1 0
+p1 0 0
+p2 0 0
+value a: 653954928
+a did not throw 
+p1 1 1
+p8 1 1
+p9 1 1
+p1 1 0
+p3 1 0
+value b: 1152148953
+did not throw b 1 0
+p4 1 0
+p5 1 0
+p1 0 1
+p2 0 1
+value a: 582373414
+a did not throw 
+p1 0 2
+p2 0 2
+value a: 1573724711
+a did not throw 
+p1 1 3
+p8 1 3
+p9 1 3
+p1 1 2
+p8 1 2
+p9 1 2
+p1 1 1
+p8 1 1
+p9 1 1
+p1 1 0
+p3 1 0
+value b: 852420273
+did not throw b 1 0
+p4 1 0
+p5 1 0
+p1 0 1
+p2 0 1
+value a: 974775202
+a did not throw 
+p1 0 2
+p2 0 2
+value a: 8613608
+a did not throw 
+p1 0 3
+p2 0 3
+value a: 1381631578
+a did not throw 
+p1 0 4
+p2 0 4
+value a: 112174670
+p10 1 3
+E2 1 3
+p11 1 3
+p12 1 3
+p1 2 0
+p3 2 0
+value b: 755042777
+did not throw b 2 0
+p4 2 0
+p5 2 0
+p1 1 1
+p8 1 1
+p9 1 1
+p1 1 0
+p3 1 0
+value b: 176451519
+did not throw b 1 0
+p4 1 0
+p5 1 0
+p1 0 1
+p2 0 1
+value a: 1931663650
+p6 1 0
+E1 1 0
+p7 1 0
+p12 1 0
+p1 0 0
+p2 0 0
+value a: 1821468658
+a did not throw 
+p1 3 1
+p8 3 1
+p9 3 1
+p1 3 0
+p3 3 0
+value b: 1440235046
+did not throw b 3 0
+p4 3 0
+p5 3 0
+p1 2 1
+p8 2 1
+p9 2 1
+p1 2 0
+p3 2 0
+value b: 50933234
+did not throw b 2 0
+p4 2 0
+p5 2 0
+p1 1 1
+p8 1 1
+p9 1 1
+p1 1 0
+p3 1 0
+value b: 921758672
+did not throw b 1 0
+p4 1 0
+p5 1 0
+p1 0 1
+p2 0 1
+value a: 1020525948
+a did not throw 
+p1 0 2
+p2 0 2
+value a: 1649758717
+a did not throw 
+p1 1 3
+p8 1 3
+p9 1 3
+p1 1 2
+p8 1 2
+p9 1 2
+p1 1 1
+p8 1 1
+p9 1 1
+p1 1 0
+p3 1 0
+value b: 1032957227
+did not throw b 1 0
+p4 1 0
+p5 1 0
+p1 0 1
+p2 0 1
+value a: 512045883
+a did not throw 
+p1 0 2
+p2 0 2
+value a: 64719440
+p10 1 1
+E2 1 1
+p11 1 1
+p12 1 1
+p1 0 0
+p2 0 0
+value a: 1936118777
+a did not throw 
+p1 0 1
+p2 0 1
+value a: 1199183524
+a did not throw 
+p1 2 2
+p8 2 2
+p9 2 2
+p1 2 1
+p8 2 1
+p9 2 1
+p1 2 0
+p3 2 0
+value b: 335760887
+did not throw b 2 0
+p4 2 0
+p5 2 0
+p1 1 1
+p8 1 1
+p9 1 1
+p1 1 0
+p3 1 0
+value b: 490024099
+did not throw b 1 0
+p4 1 0
+p5 1 0
+p1 0 1
+p2 0 1
+value a: 1338655129
+a did not throw 
+p1 0 2
+p2 0 2
+value a: 1545747104
+a did not throw 
+p1 1 3
+p8 1 3
+p9 1 3
+p1 1 2
+p8 1 2
+p9 1 2
+p1 1 1
+p8 1 1
+p9 1 1
+p1 1 0
+p3 1 0
+value b: 464934819
+did not throw b 1 0
+p4 1 0
+p5 1 0
+p1 0 1
+p2 0 1
+value a: 1434119647
+a did not throw 
+p1 0 2
+p2 0 2
+value a: 455718699
+a did not throw 
+p1 0 3
+p2 0 3
+value a: 269518032
+a did not throw 
+p1 0 4
+p2 0 4
+value a: 2088074575
+p10 1 3
+E2 1 3
+p11 1 3
+p12 1 3
+p1 1 0
+p3 1 0
+value b: 1607867652
+did not throw b 1 0
+p4 1 0
+p5 1 0
+p1 0 1
+p2 0 1
+value a: 851891446
+a did not throw 
+2
+4 6 35223 5
+p1 4 6
+p8 4 6
+p9 4 6
+p1 4 5
+p8 4 5
+p9 4 5
+p1 4 4
+p8 4 4
+p9 4 4
+p1 4 3
+p8 4 3
+p9 4 3
+p1 4 2
+p8 4 2
+p9 4 2
+p1 4 1
+p8 4 1
+p9 4 1
+p1 4 0
+p3 4 0
+value : 413092284
+did not throw b 4 0
+p4 4 0
+p5 4 0
+p1 3 1
+p8 3 1
+p9 3 1
+p1 3 0
+p3 3 0
+value : 534605864
+did not throw b 3 0
+p4 3 0
+p5 3 0
+p1 2 1
+p8 2 1
+p9 2 1
+p1 2 0
+p3 2 0
+value : 319996712
+did not throw b 2 0
+p4 2 0
+p5 2 0
+p1 1 1
+p8 1 1
+p9 1 1
+p1 1 0
+p3 1 0
+value : 321479938
+did not throw b 1 0
+p4 1 0
+p5 1 0
+p1 0 1
+p2 0 1
+value a: 594747900
+p6 1 0
+E1 1 0
+p7 1 0
+p12 1 0
+p1 0 0
+p2 0 0
+value a: 181347780
+p10 1 1
+E2 1 1
+p11 1 1
+p12 1 1
+p1 1 0
+p3 1 0
+value : 463991022
+did not throw b 1 0
+p4 1 0
+p5 1 0
+p1 0 1
+p2 0 1
+value a: 1332072250
+p6 1 0
+E1 1 0
+p7 1 0
+p12 1 0
+p1 2 0
+p3 2 0
+value : 1010908542
+did not throw b 2 0
+p4 2 0
+p5 2 0
+p1 1 1
+p8 1 1
+p9 1 1
+p1 1 0
+p3 1 0
+value : 2058712680
+p10 1 1
+E2 1 1
+p11 1 1
+p12 1 1
+p1 3 0
+p3 3 0
+value : 1111102536
+did not throw b 3 0
+p4 3 0
+p5 3 0
+p1 2 1
+p8 2 1
+p9 2 1
+p1 2 0
+p3 2 0
+value : 791962994
+did not throw b 2 0
+p4 2 0
+p5 2 0
+p1 1 1
+p8 1 1
+p9 1 1
+p1 1 0
+p3 1 0
+value : 1195617707
+did not throw b 1 0
+p4 1 0
+p5 1 0
+p1 0 1
+p2 0 1
+value a: 1856080724
+a did not throw 
+p1 0 2
+p2 0 2
+value a: 1945711068
+a did not throw 
+p1 1 3
+p8 1 3
+p9 1 3
+p1 1 2
+p8 1 2
+p9 1 2
+p1 1 1
+p8 1 1
+p9 1 1
+p1 1 0
+p3 1 0
+value : 1599817611
+did not throw b 1 0
+p4 1 0
+p5 1 0
+p1 0 1
+p2 0 1
+value a: 938944770
+p6 1 0
+E1 1 0
+p7 1 0
+p12 1 0
+p1 0 0
+p2 0 0
+value a: 1421005398
+a did not throw 
+p1 0 1
+p2 0 1
+value a: 2103476560
+E3
+4 6 35223 5
+p1 4 6
+p8 4 6
+p9 4 6
+p1 4 5
+p8 4 5
+p9 4 5
+p1 4 4
+p8 4 4
+p9 4 4
+p1 4 3
+p8 4 3
+p9 4 3
+p1 4 2
+p8 4 2
+p9 4 2
+p1 4 1
+p8 4 1
+p9 4 1
+p1 4 0
+p3 4 0
+value : 1977156140
+p10 4 1
+E2 4 1
+p11 4 1
+p12 4 1
+p1 3 0
+p3 3 0
+value : 558490411
+did not throw b 3 0
+p4 3 0
+p5 3 0
+p1 2 1
+p8 2 1
+p9 2 1
+p1 2 0
+p3 2 0
+value : 94693711
+did not throw b 2 0
+p4 2 0
+p5 2 0
+p1 1 1
+p8 1 1
+p9 1 1
+p1 1 0
+p3 1 0
+value : 777790202
+did not throw b 1 0
+p4 1 0
+p5 1 0
+p1 0 1
+p2 0 1
+value a: 1994952673
+a did not throw 
+p1 0 2
+p2 0 2
+value a: 919769783
+a did not throw 
+p1 1 3
+p8 1 3
+p9 1 3
+p1 1 2
+p8 1 2
+p9 1 2
+p1 1 1
+p8 1 1
+p9 1 1
+p1 1 0
+p3 1 0
+value : 392401788
+did not throw b 1 0
+p4 1 0
+p5 1 0
+p1 0 1
+p2 0 1
+value a: 1847754967
+a did not throw 
+p1 0 2
+p2 0 2
+value a: 582372544
+a did not throw 
+p1 0 3
+p2 0 3
+value a: 529211305
+E3
+4 6 35223 5
+p1 4 6
+p8 4 6
+p9 4 6
+p1 4 5
+p8 4 5
+p9 4 5
+p1 4 4
+p8 4 4
+p9 4 4
+p1 4 3
+p8 4 3
+p9 4 3
+p1 4 2
+p8 4 2
+p9 4 2
+p1 4 1
+p8 4 1
+p9 4 1
+p1 4 0
+p3 4 0
+value : 942303589
+did not throw b 4 0
+p4 4 0
+p5 4 0
+p1 3 1
+p8 3 1
+p9 3 1
+p1 3 0
+p3 3 0
+value : 1819488980
+p10 3 1
+E2 3 1
+p11 3 1
+p12 3 1
+p1 3 0
+p3 3 0
+value : 1066425881
+did not throw b 3 0
+p4 3 0
+p5 3 0
+p1 2 1
+p8 2 1
+p9 2 1
+p1 2 0
+p3 2 0
+value : 1263783527
+did not throw b 2 0
+p4 2 0
+p5 2 0
+p1 1 1
+p8 1 1
+p9 1 1
+p1 1 0
+p3 1 0
+value : 1727774550
+p10 1 1
+E2 1 1
+p11 1 1
+p12 1 1
+p1 1 0
+p3 1 0
+value : 1598825482
+did not throw b 1 0
+p4 1 0
+p5 1 0
+p1 0 1
+p2 0 1
+value a: 1284883116
+a did not throw 
+p1 3 2
+p8 3 2
+p9 3 2
+p1 3 1
+p8 3 1
+p9 3 1
+p1 3 0
+p3 3 0
+value : 1639003582
+did not throw b 3 0
+p4 3 0
+p5 3 0
+p1 2 1
+p8 2 1
+p9 2 1
+p1 2 0
+p3 2 0
+value : 903161549
+did not throw b 2 0
+p4 2 0
+p5 2 0
+p1 1 1
+p8 1 1
+p9 1 1
+p1 1 0
+p3 1 0
+value : 687137641
+did not throw b 1 0
+p4 1 0
+p5 1 0
+p1 0 1
+p2 0 1
+value a: 746429169
+a did not throw 
+p1 0 2
+p2 0 2
+value a: 266753232
+a did not throw 
+p1 1 3
+p8 1 3
+p9 1 3
+p1 1 2
+p8 1 2
+p9 1 2
+p1 1 1
+p8 1 1
+p9 1 1
+p1 1 0
+p3 1 0
+value : 271041447
+did not throw b 1 0
+p4 1 0
+p5 1 0
+p1 0 1
+p2 0 1
+value a: 1247773661
+a did not throw 
+p1 0 2
+p2 0 2
+value a: 111198555
+E3
+4 6 35223 5
+p1 4 6
+p8 4 6
+p9 4 6
+p1 4 5
+p8 4 5
+p9 4 5
+p1 4 4
+p8 4 4
+p9 4 4
+p1 4 3
+p8 4 3
+p9 4 3
+p1 4 2
+p8 4 2
+p9 4 2
+p1 4 1
+p8 4 1
+p9 4 1
+p1 4 0
+p3 4 0
+value : 1209986217
+did not throw b 4 0
+p4 4 0
+p5 4 0
+p1 3 1
+p8 3 1
+p9 3 1
+p1 3 0
+p3 3 0
+value : 95464517
+did not throw b 3 0
+p4 3 0
+p5 3 0
+p1 2 1
+p8 2 1
+p9 2 1
+p1 2 0
+p3 2 0
+value : 1057455242
+did not throw b 2 0
+p4 2 0
+p5 2 0
+p1 1 1
+p8 1 1
+p9 1 1
+p1 1 0
+p3 1 0
+value : 1152148953
+did not throw b 1 0
+p4 1 0
+p5 1 0
+p1 0 1
+p2 0 1
+value a: 562444371
+a did not throw 
+p1 0 2
+p2 0 2
+value a: 701388970
+E3
+4 6 35223 5
+p1 4 6
+p8 4 6
+p9 4 6
+p1 4 5
+p8 4 5
+p9 4 5
+p1 4 4
+p8 4 4
+p9 4 4
+p1 4 3
+p8 4 3
+p9 4 3
+p1 4 2
+p8 4 2
+p9 4 2
+p1 4 1
+p8 4 1
+p9 4 1
+p1 4 0
+p3 4 0
+value : 852420273
+did not throw b 4 0
+p4 4 0
+p5 4 0
+p1 3 1
+p8 3 1
+p9 3 1
+p1 3 0
+p3 3 0
+value : 755042777
+did not throw b 3 0
+p4 3 0
+p5 3 0
+p1 2 1
+p8 2 1
+p9 2 1
+p1 2 0
+p3 2 0
+value : 176451519
+did not throw b 2 0
+p4 2 0
+p5 2 0
+p1 1 1
+p8 1 1
+p9 1 1
+p1 1 0
+p3 1 0
+value : 1440235046
+did not throw b 1 0
+p4 1 0
+p5 1 0
+p1 0 1
+p2 0 1
+value a: 139471605
+p6 1 0
+E1 1 0
+p7 1 0
+p12 1 0
+p1 0 0
+p2 0 0
+value a: 2122394368
+a did not throw 
+p1 1 1
+p8 1 1
+p9 1 1
+p1 1 0
+p3 1 0
+value : 50933234
+did not throw b 1 0
+p4 1 0
+p5 1 0
+p1 0 1
+p2 0 1
+value a: 1952066860
+p6 1 0
+E1 1 0
+p7 1 0
+p12 1 0
+p1 0 0
+p2 0 0
+value a: 653954928
+a did not throw 
+p1 2 1
+p8 2 1
+p9 2 1
+p1 2 0
+p3 2 0
+value : 921758672
+did not throw b 2 0
+p4 2 0
+p5 2 0
+p1 1 1
+p8 1 1
+p9 1 1
+p1 1 0
+p3 1 0
+value : 1032957227
+did not throw b 1 0
+p4 1 0
+p5 1 0
+p1 0 1
+p2 0 1
+value a: 582373414
+a did not throw 
+p1 0 2
+p2 0 2
+value a: 1573724711
+a did not throw 
+p1 1 3
+p8 1 3
+p9 1 3
+p1 1 2
+p8 1 2
+p9 1 2
+p1 1 1
+p8 1 1
+p9 1 1
+p1 1 0
+p3 1 0
+value : 335760887
+did not throw b 1 0
+p4 1 0
+p5 1 0
+p1 0 1
+p2 0 1
+value a: 974775202
+a did not throw 
+p1 0 2
+p2 0 2
+value a: 8613608
+a did not throw 
+p1 0 3
+p2 0 3
+value a: 1381631578
+a did not throw 
+p1 0 4
+p2 0 4
+value a: 112174670
+E3
+4 6 35223 5
+p1 4 6
+p8 4 6
+p9 4 6
+p1 4 5
+p8 4 5
+p9 4 5
+p1 4 4
+p8 4 4
+p9 4 4
+p1 4 3
+p8 4 3
+p9 4 3
+p1 4 2
+p8 4 2
+p9 4 2
+p1 4 1
+p8 4 1
+p9 4 1
+p1 4 0
+p3 4 0
+value : 490024099
+did not throw b 4 0
+p4 4 0
+p5 4 0
+p1 3 1
+p8 3 1
+p9 3 1
+p1 3 0
+p3 3 0
+value : 464934819
+did not throw b 3 0
+p4 3 0
+p5 3 0
+p1 2 1
+p8 2 1
+p9 2 1
+p1 2 0
+p3 2 0
+value : 1607867652
+did not throw b 2 0
+p4 2 0
+p5 2 0
+p1 1 1
+p8 1 1
+p9 1 1
+p1 1 0
+p3 1 0
+value : 0
+p10 1 1
+E2 1 1
+p11 1 1
+p12 1 1
+p1 1 0
+p3 1 0
+value : 0
+p6 1 0
+E1 1 0
+p7 1 0
+p12 1 0
+p1 2 0
+p3 2 0
+value : 0
+p6 1 0
+E1 1 0
+p7 1 0
+p12 1 0

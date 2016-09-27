@@ -1,0 +1,23 @@
+Script started on Tue Oct 13 19:59:10 2015
+1%>ubuntu1204-004:~/cs343/a2/q2> make cardgame 
+make: `cardgame' is up to date.
+1%>ubuntu1204-004:~/cs343/a2/q2> ./cardgame 4 5 > t1.out
+1%>ubuntu1204-004:~/cs343/a2/q2> cd ..
+1%>ubuntu1204-004:~/cs343/a2> ls
+ImplType  assign2.pdf  cardgame  q1	q2     q3     sample.in   t1.out
+Makefile  binsertsort  final	 q1.cc	q2.cc  q3.cc  sample.out  t2.out
+1%>ubuntu1204-004:~/cs343/a2> ./cardgame 4 5 > t1.out
+1%>ubuntu1204-004:~/cs343/a2> cd q2
+1%>ubuntu1204-004:~/cs343/a2/q2> scriptfix q2.txt > finish.txt
+1%>ubuntu1204-004:~/cs343/a2/q2> script
+Script started, file is typescript
+2%>ubuntu1204-004:~/cs343/a2/q2> 
+2%>ubuntu1204-004:~/cs343/a2/q2> 
+2%>ubuntu1204-004:~/cs343/a2/q2> 
+2%>ubuntu1204-004:~/cs343/a2/q2> exit
+exit
+Script done, file is typescript
+1%>ubuntu1204-004:~/cs343/a2/q2> exit
+exit
+
+Script done on Tue Oct 13 20:00:46 2015

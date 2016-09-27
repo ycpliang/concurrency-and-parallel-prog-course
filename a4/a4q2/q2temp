@@ -1,0 +1,280 @@
+Script started on Tue Nov 10 19:35:20 2015
+1%>ubuntu1204-004:[1m~/cs343/a4/a4q2[0m> ./vote
+Voter0	Voter1	Voter2	Voter3	Voter4	Voter5
+=======	=======	=======	=======	=======	=======
+S						
+V p						
+B 1			S			
+			V p			
+		S	B 2			
+		V s				
+		C				
+...	...	F 0	...	...	...	
+U 1						
+F 0	...	...	...	...	...	
+			U 0			
+...	...	...	F 0	...	...	
+				S		
+				V s		
+				B 1	S	
+					V p	
+	S				B 2	
+	V s					
+	C					
+...	F 1	...	...	...	...	
+				U 1		
+...	...	...	...	F 1	...	
+					U 0	
+...	...	...	...	...	F 1	
+=================
+All tours started
+1%>ubuntu1204-004:[1m~/cs343/a4/a4q2[0m> ./vote 1
+size of Tour is smaller than Size of Group
+1%>ubuntu1204-004:[1m~/cs343/a4/a4q2[0m> ./vote 1[K2
+size of Tour is smaller than Size of Group
+1%>ubuntu1204-004:[1m~/cs343/a4/a4q2[0m> ./vote 2[K4
+group not evenly divisible
+1%>ubuntu1204-004:[1m~/cs343/a4/a4q2[0m> 3
+3: Command not found.
+1%>ubuntu1204-004:[1m~/cs343/a4/a4q2[0m> 3./vote 4[K3
+Voter0	Voter1	Voter2
+=======	=======	=======
+	S		
+	V p		
+	B 1	S	
+		V s	
+S		B 2	
+V s			
+C			
+F 1	...	...	
+	U 1		
+...	F 1	...	
+		U 0	
+...	...	F 1	
+=================
+All tours started
+1%>ubuntu1204-004:[1m~/cs343/a4/a4q2[0m> ./vote 3[K4 [K4 2
+sizeOfGroup not odd
+1%>ubuntu1204-004:[1m~/cs343/a4/a4q2[0m> ./vote 4 2[K[K5 3
+group not evenly divisible
+1%>ubuntu1204-004:[1m~/cs343/a4/a4q2[0m> ./vote 5 3[K[K6 [K5 5
+Voter0	Voter1	Voter2	Voter3	Voter4
+=======	=======	=======	=======	=======
+S					
+V p					
+B 1		S			
+		V p			
+		B 2		S	
+				V s	
+	S			B 3	
+	V p				
+	B 4		S		
+			V s		
+			C		
+...	...	...	F 0	...	
+U 3					
+F 0	...	...	...	...	
+		U 2			
+...	...	F 0	...	...	
+				U 1	
+...	...	...	...	F 0	
+	U 0				
+...	F 0	...	...	...	
+=================
+All tours started
+1%>ubuntu1204-004:[1m~/cs343/a4/a4q2[0m> ./vote 5 5[K[K3 [K6 2
+sizeOfGroup not odd
+1%>ubuntu1204-004:[1m~/cs343/a4/a4q2[0m> ./vote 6 2[K3 2[K2 1
+wrong number of parameter
+1%>ubuntu1204-004:[1m~/cs343/a4/a4q2[0m> ./vote 6 3 2 1[K[K[K[K-1 3 2
+paramater 1 error
+1%>ubuntu1204-004:[1m~/cs343/a4/a4q2[0m> ./vote -1 3 2[P[P[1@5 -3 2
+paramater 2 error
+1%>ubuntu1204-004:[1m~/cs343/a4/a4q2[0m> ./vote 5 -3 23 2[K3 -2
+paramater 3 error
+1%>ubuntu1204-004:[1m~/cs343/a4/a4q2[0m> ./vote 5 3 -2[1@-
+paramater 3 error
+1%>ubuntu1204-004:[1m~/cs343/a4/a4q2[0m> ./vote 5 -3 -2[P3 -2[K2[K[K[K[K[K[K[K[K[K./vote 5 3 -2[K[K[K[K6[K12 6 [K[K[K[K[K[K[K[K[Kmake vote TYPE = MC
+rm -f ImplType
+touch q2tallyVotes.h
+sleep 1
+make vote TYPE="MC"
+make[1]: Entering directory `/u9/ycpliang/cs343/a4/a4q2'
+echo "IMPLTYPE=MC" > ImplType
+sleep 1
+make[1]: Leaving directory `/u9/ycpliang/cs343/a4/a4q2'
+make[1]: Entering directory `/u9/ycpliang/cs343/a4/a4q2'
+u++					 -g -multi -Wall -Wno-unused-label -MMD -O2 -D"STACK" -DIMPLTYPE_"MC"   -c -o q2main.o q2main.cc
+uC++ Version 6.1.0 (multiple processor) (debug) (no yield) (no verify) (no profile)
+u++					 -g -multi -Wall -Wno-unused-label -MMD -O2 -D"STACK" -DIMPLTYPE_"MC"   -c -o voter.o voter.cc
+uC++ Version 6.1.0 (multiple processor) (debug) (no yield) (no verify) (no profile)
+u++					 -g -multi -Wall -Wno-unused-label -MMD -O2 -D"STACK" -DIMPLTYPE_"MC"   -c -o q2tallyVotesMC.o q2tallyVotesMC.cc
+uC++ Version 6.1.0 (multiple processor) (debug) (no yield) (no verify) (no profile)
+u++					 -g -multi -Wall -Wno-unused-label -MMD -O2 -D"STACK" -DIMPLTYPE_"MC"   -c -o printer.o printer.cc
+uC++ Version 6.1.0 (multiple processor) (debug) (no yield) (no verify) (no profile)
+u++					 -g -multi -Wall -Wno-unused-label -MMD -O2 -D"STACK" -DIMPLTYPE_"MC" q2main.o voter.o q2tallyVotesMC.o printer.o -o vote
+uC++ Version 6.1.0 (multiple processor) (debug) (no yield) (no verify) (no profile)
+make[1]: Leaving directory `/u9/ycpliang/cs343/a4/a4q2'
+1%>ubuntu1204-004:[1m~/cs343/a4/a4q2[0m> ./vote 9 3 10
+Voter0	Voter1	Voter2	Voter3	Voter4	Voter5	Voter6	Voter7	Voter8
+=======	=======	=======	=======	=======	=======	=======	=======	=======
+			S						
+			V s						
+			B 1					S	
+								V s	
+	S							B 2	
+	V s								
+	C								
+...	F 1	...	...	...	...	...	...	...	
+			U 1						
+...	...	...	F 1	...	...	...	...	...	
+								U 0	
+...	...	...	...	...	...	...	...	F 1	
+							S		
+							V p		
+S							B 1		
+V s									
+B 2						S			
+						V p			
+						C			
+...	...	...	...	...	...	F 0	...	...	
+							U 1		
+...	...	...	...	...	...	...	F 0	...	
+U 0					S				
+F 0	...	...	...	...	...	...	...	...	
+		S		S	V s				
+		V p			B 1				
+		B 2		V p					
+				C					
+...	...	...	...	F 0	...	...	...	...	
+					U 1				
+...	...	...	...	...	F 0	...	...	...	
+		U 0							
+...	...	F 0	...	...	...	...	...	...	
+=================
+All tours started
+1%>ubuntu1204-004:[1m~/cs343/a4/a4q2[0m> ./vote 9 3 10[K[K[K[K[K[K[K[K[K[Kmake vote TPYE[K[K[KYPE = M[KBAR
+rm -f ImplType
+touch q2tallyVotes.h
+sleep 1
+make vote TYPE="BAR"
+make[1]: Entering directory `/u9/ycpliang/cs343/a4/a4q2'
+echo "IMPLTYPE=BAR" > ImplType
+sleep 1
+make[1]: Leaving directory `/u9/ycpliang/cs343/a4/a4q2'
+make[1]: Entering directory `/u9/ycpliang/cs343/a4/a4q2'
+u++					 -g -multi -Wall -Wno-unused-label -MMD -O2 -D"STACK" -DIMPLTYPE_"BAR"   -c -o q2main.o q2main.cc
+uC++ Version 6.1.0 (multiple processor) (debug) (no yield) (no verify) (no profile)
+u++					 -g -multi -Wall -Wno-unused-label -MMD -O2 -D"STACK" -DIMPLTYPE_"BAR"   -c -o voter.o voter.cc
+uC++ Version 6.1.0 (multiple processor) (debug) (no yield) (no verify) (no profile)
+u++					 -g -multi -Wall -Wno-unused-label -MMD -O2 -D"STACK" -DIMPLTYPE_"BAR"   -c -o q2tallyVotesBAR.o q2tallyVotesBAR.cc
+uC++ Version 6.1.0 (multiple processor) (debug) (no yield) (no verify) (no profile)
+u++					 -g -multi -Wall -Wno-unused-label -MMD -O2 -D"STACK" -DIMPLTYPE_"BAR"   -c -o printer.o printer.cc
+uC++ Version 6.1.0 (multiple processor) (debug) (no yield) (no verify) (no profile)
+u++					 -g -multi -Wall -Wno-unused-label -MMD -O2 -D"STACK" -DIMPLTYPE_"BAR" q2main.o voter.o q2tallyVotesBAR.o printer.o -o vote
+uC++ Version 6.1.0 (multiple processor) (debug) (no yield) (no verify) (no profile)
+make[1]: Leaving directory `/u9/ycpliang/cs343/a4/a4q2'
+1%>ubuntu1204-004:[1m~/cs343/a4/a4q2[0m> make vote TYPE=BAR[36G./vote 9 3 10[K
+Voter0	Voter1	Voter2	Voter3	Voter4	Voter5	Voter6	Voter7	Voter8
+=======	=======	=======	=======	=======	=======	=======	=======	=======
+			S						
+			V s						
+			B 1					S	
+								V s	
+	S							B 2	
+	V s								
+	C								
+...	F 1	...	...	...	...	...	...	...	
+								U 1	
+...	...	...	...	...	...	...	...	F 1	
+			U 0						
+...	...	...	F 1	...	...	...	...	...	
+							S		
+							V p		
+S							B 1		
+V s									
+B 2						S			
+						V p			
+						C			
+...	...	...	...	...	...	F 0	...	...	
+U 1									
+F 0	...	...	...	...	...	...	...	...	
+					S		U 0		
+...	...	...	...	...	...	...	F 0	...	
+		S		S	V s				
+		V p			B 1				
+		B 2		V p					
+				C					
+...	...	...	...	F 0	...	...	...	...	
+		U 1							
+...	...	F 0	...	...	...	...	...	...	
+					U 0				
+...	...	...	...	...	F 0	...	...	...	
+=================
+All tours started
+1%>ubuntu1204-004:[1m~/cs343/a4/a4q2[0m> ./vote 9 3 10[36Gmake vote TYPE=BAR[K[K[KSEM
+rm -f ImplType
+touch q2tallyVotes.h
+sleep 1
+make vote TYPE="SEM"
+make[1]: Entering directory `/u9/ycpliang/cs343/a4/a4q2'
+echo "IMPLTYPE=SEM" > ImplType
+sleep 1
+make[1]: Leaving directory `/u9/ycpliang/cs343/a4/a4q2'
+make[1]: Entering directory `/u9/ycpliang/cs343/a4/a4q2'
+u++					 -g -multi -Wall -Wno-unused-label -MMD -O2 -D"STACK" -DIMPLTYPE_"SEM"   -c -o q2main.o q2main.cc
+uC++ Version 6.1.0 (multiple processor) (debug) (no yield) (no verify) (no profile)
+u++					 -g -multi -Wall -Wno-unused-label -MMD -O2 -D"STACK" -DIMPLTYPE_"SEM"   -c -o voter.o voter.cc
+uC++ Version 6.1.0 (multiple processor) (debug) (no yield) (no verify) (no profile)
+u++					 -g -multi -Wall -Wno-unused-label -MMD -O2 -D"STACK" -DIMPLTYPE_"SEM"   -c -o q2tallyVotesSEM.o q2tallyVotesSEM.cc
+uC++ Version 6.1.0 (multiple processor) (debug) (no yield) (no verify) (no profile)
+u++					 -g -multi -Wall -Wno-unused-label -MMD -O2 -D"STACK" -DIMPLTYPE_"SEM"   -c -o printer.o printer.cc
+uC++ Version 6.1.0 (multiple processor) (debug) (no yield) (no verify) (no profile)
+u++					 -g -multi -Wall -Wno-unused-label -MMD -O2 -D"STACK" -DIMPLTYPE_"SEM" q2main.o voter.o q2tallyVotesSEM.o printer.o -o vote
+uC++ Version 6.1.0 (multiple processor) (debug) (no yield) (no verify) (no profile)
+make[1]: Leaving directory `/u9/ycpliang/cs343/a4/a4q2'
+1%>ubuntu1204-004:[1m~/cs343/a4/a4q2[0m> make vote TYPE=SEM[36G./vote 9 3 10[K
+Voter0	Voter1	Voter2	Voter3	Voter4	Voter5	Voter6	Voter7	Voter8
+=======	=======	=======	=======	=======	=======	=======	=======	=======
+			S						
+			V s						
+			B 1					S	
+								V s	
+	S							B 2	
+	V s								
+	C								
+...	F 1	...	...	...	...	...	...	...	
+			U 1						
+...	...	...	F 1	...	...	...	...	...	
+								U 0	
+...	...	...	...	...	...	...	...	F 1	
+							S		
+							V p		
+S							B 1		
+V s									
+B 2						S			
+						V p			
+						C			
+...	...	...	...	...	...	F 0	...	...	
+							U 1		
+...	...	...	...	...	...	...	F 0	...	
+					S				
+					V s				
+U 1					B 2				
+F 1	...	...	...	...	...	...	...	...	
+		S							
+		V p							
+		B 2		S					
+				V p					
+				C					
+...	...	...	...	F 0	...	...	...	...	
+					U 1				
+...	...	...	...	...	F 0	...	...	...	
+		U 0							
+...	...	F 0	...	...	...	...	...	...	
+=================
+All tours started
+1%>ubuntu1204-004:[1m~/cs343/a4/a4q2[0m> exit
+exit
+
+Script done on Tue Nov 10 19:42:02 2015

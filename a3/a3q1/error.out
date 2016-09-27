@@ -1,0 +1,144 @@
+u++					 -g -multi -Wall -Wno-unused-label -MMD -O2 -DTYPE="int" -DBTYPE="int" -DSENTINEL="-1" -D"NOBUSY"    -c -o q1.o q1.cc
+uC++ Version 6.1.0 (multiple processor) (debug) (no yield) (no verify) (no profile)
+q1.cc: In member function 'virtual void uMain::main()':
+q1.cc:96:40: error: no match for 'operator<<' (operand types are 'int' and 'std::istringstream {aka std::basic_istringstream<char>}')
+   if(outfile != NULL && (!(depth << istringstream(outfile)) || depth < 0)){ 
+                                        ^
+q1.cc:96:40: note: candidates are:
+In file included from /usr/local/u++-6.1.0/inc/uC++.h:807:0,
+                 from <command-line>:1:
+/usr/local/u++-6.1.0/inc/uCalendar.h:122:26: note: std::ostream& operator<<(std::ostream&, uDuration)
+     friend std::ostream &operator<<( std::ostream &os, const uDuration op );
+                          ^
+/usr/local/u++-6.1.0/inc/uCalendar.h:122:26: note:   no known conversion for argument 1 from 'int' to 'std::ostream& {aka std::basic_ostream<char>&}'
+/usr/local/u++-6.1.0/inc/uCalendar.h:292:26: note: std::ostream& operator<<(std::ostream&, uTime)
+     friend std::ostream &operator<<( std::ostream &os, const uTime op );
+                          ^
+/usr/local/u++-6.1.0/inc/uCalendar.h:292:26: note:   no known conversion for argument 1 from 'int' to 'std::ostream& {aka std::basic_ostream<char>&}'
+In file included from /usr/local/u++-6.1.0/inc/ostream:29:0,
+                 from /usr/include/c++/4.9/iostream:39,
+                 from q1.cc:1:
+/usr/include/c++/4.9/ostream:602:2: note: template<class _CharT, class _Traits, class _Tp> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&&, const _Tp&)
+     operator<<(basic_ostream<_CharT, _Traits>&& __os, const _Tp& __x)
+  ^
+/usr/include/c++/4.9/ostream:602:2: note:   template argument deduction/substitution failed:
+q1.cc:96:67: note:   mismatched types 'std::basic_ostream<_CharT, _Traits>' and 'int'
+   if(outfile != NULL && (!(depth << istringstream(outfile)) || depth < 0)){ 
+                                                                   ^
+In file included from /usr/local/u++-6.1.0/inc/ostream:29:0,
+                 from /usr/include/c++/4.9/iostream:39,
+                 from q1.cc:1:
+/usr/include/c++/4.9/ostream:548:2: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const unsigned char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const unsigned char* __s)
+  ^
+/usr/include/c++/4.9/ostream:548:2: note:   template argument deduction/substitution failed:
+q1.cc:96:67: note:   mismatched types 'std::basic_ostream<char, _Traits>' and 'int'
+   if(outfile != NULL && (!(depth << istringstream(outfile)) || depth < 0)){ 
+                                                                   ^
+In file included from /usr/local/u++-6.1.0/inc/ostream:29:0,
+                 from /usr/include/c++/4.9/iostream:39,
+                 from q1.cc:1:
+/usr/include/c++/4.9/ostream:543:2: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const signed char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const signed char* __s)
+  ^
+/usr/include/c++/4.9/ostream:543:2: note:   template argument deduction/substitution failed:
+q1.cc:96:67: note:   mismatched types 'std::basic_ostream<char, _Traits>' and 'int'
+   if(outfile != NULL && (!(depth << istringstream(outfile)) || depth < 0)){ 
+                                                                   ^
+In file included from /usr/local/u++-6.1.0/inc/ostream:29:0,
+                 from /usr/include/c++/4.9/iostream:39,
+                 from q1.cc:1:
+/usr/include/c++/4.9/ostream:530:2: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const char* __s)
+  ^
+/usr/include/c++/4.9/ostream:530:2: note:   template argument deduction/substitution failed:
+q1.cc:96:67: note:   mismatched types 'std::basic_ostream<char, _Traits>' and 'int'
+   if(outfile != NULL && (!(depth << istringstream(outfile)) || depth < 0)){ 
+                                                                   ^
+In file included from /usr/include/c++/4.9/ostream:609:0,
+                 from /usr/local/u++-6.1.0/inc/ostream:29,
+                 from /usr/include/c++/4.9/iostream:39,
+                 from q1.cc:1:
+/usr/include/c++/4.9/bits/ostream.tcc:318:2: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const char*)
+ 
+  ^
+/usr/include/c++/4.9/bits/ostream.tcc:318:2: note:   template argument deduction/substitution failed:
+q1.cc:96:67: note:   mismatched types 'std::basic_ostream<_CharT, _Traits>' and 'int'
+   if(outfile != NULL && (!(depth << istringstream(outfile)) || depth < 0)){ 
+                                                                   ^
+In file included from /usr/local/u++-6.1.0/inc/ostream:29:0,
+                 from /usr/include/c++/4.9/iostream:39,
+                 from q1.cc:1:
+/usr/include/c++/4.9/ostream:513:2: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const _CharT*)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, const _CharT* __s)
+  ^
+/usr/include/c++/4.9/ostream:513:2: note:   template argument deduction/substitution failed:
+q1.cc:96:67: note:   mismatched types 'std::basic_ostream<_CharT, _Traits>' and 'int'
+   if(outfile != NULL && (!(depth << istringstream(outfile)) || depth < 0)){ 
+                                                                   ^
+In file included from /usr/local/u++-6.1.0/inc/ostream:29:0,
+                 from /usr/include/c++/4.9/iostream:39,
+                 from q1.cc:1:
+/usr/include/c++/4.9/ostream:493:2: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, unsigned char)
+     operator<<(basic_ostream<char, _Traits>& __out, unsigned char __c)
+  ^
+/usr/include/c++/4.9/ostream:493:2: note:   template argument deduction/substitution failed:
+q1.cc:96:67: note:   mismatched types 'std::basic_ostream<char, _Traits>' and 'int'
+   if(outfile != NULL && (!(depth << istringstream(outfile)) || depth < 0)){ 
+                                                                   ^
+In file included from /usr/local/u++-6.1.0/inc/ostream:29:0,
+                 from /usr/include/c++/4.9/iostream:39,
+                 from q1.cc:1:
+/usr/include/c++/4.9/ostream:488:2: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, signed char)
+     operator<<(basic_ostream<char, _Traits>& __out, signed char __c)
+  ^
+/usr/include/c++/4.9/ostream:488:2: note:   template argument deduction/substitution failed:
+q1.cc:96:67: note:   mismatched types 'std::basic_ostream<char, _Traits>' and 'int'
+   if(outfile != NULL && (!(depth << istringstream(outfile)) || depth < 0)){ 
+                                                                   ^
+In file included from /usr/local/u++-6.1.0/inc/ostream:29:0,
+                 from /usr/include/c++/4.9/iostream:39,
+                 from q1.cc:1:
+/usr/include/c++/4.9/ostream:482:2: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, char)
+     operator<<(basic_ostream<char, _Traits>& __out, char __c)
+  ^
+/usr/include/c++/4.9/ostream:482:2: note:   template argument deduction/substitution failed:
+q1.cc:96:67: note:   mismatched types 'std::basic_ostream<char, _Traits>' and 'int'
+   if(outfile != NULL && (!(depth << istringstream(outfile)) || depth < 0)){ 
+                                                                   ^
+In file included from /usr/local/u++-6.1.0/inc/ostream:29:0,
+                 from /usr/include/c++/4.9/iostream:39,
+                 from q1.cc:1:
+/usr/include/c++/4.9/ostream:476:2: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, char)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, char __c)
+  ^
+/usr/include/c++/4.9/ostream:476:2: note:   template argument deduction/substitution failed:
+q1.cc:96:67: note:   mismatched types 'std::basic_ostream<_CharT, _Traits>' and 'int'
+   if(outfile != NULL && (!(depth << istringstream(outfile)) || depth < 0)){ 
+                                                                   ^
+In file included from /usr/local/u++-6.1.0/inc/ostream:29:0,
+                 from /usr/include/c++/4.9/iostream:39,
+                 from q1.cc:1:
+/usr/include/c++/4.9/ostream:471:2: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, _CharT)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, _CharT __c)
+  ^
+/usr/include/c++/4.9/ostream:471:2: note:   template argument deduction/substitution failed:
+q1.cc:96:67: note:   mismatched types 'std::basic_ostream<_CharT, _Traits>' and 'int'
+   if(outfile != NULL && (!(depth << istringstream(outfile)) || depth < 0)){ 
+                                                                   ^
+In file included from /usr/include/c++/4.9/string:52:0,
+                 from /usr/include/c++/4.9/stdexcept:39,
+                 from /usr/include/c++/4.9/array:38,
+                 from /usr/include/c++/4.9/tuple:39,
+                 from /usr/include/c++/4.9/functional:55,
+                 from /usr/local/u++-6.1.0/inc/uEHM.h:32,
+                 from /usr/local/u++-6.1.0/inc/uC++.h:748,
+                 from <command-line>:1:
+/usr/include/c++/4.9/bits/basic_string.h:2772:2: note: template<class _CharT, class _Traits, class _Alloc> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator<<(basic_ostream<_CharT, _Traits>& __os,
+  ^
+/usr/include/c++/4.9/bits/basic_string.h:2772:2: note:   template argument deduction/substitution failed:
+q1.cc:96:67: note:   mismatched types 'std::basic_ostream<_CharT, _Traits>' and 'int'
+   if(outfile != NULL && (!(depth << istringstream(outfile)) || depth < 0)){ 
+                                                                   ^
+make: *** [q1.o] Error 1

@@ -1,0 +1,70 @@
+Script started on Wed Nov 11 13:33:52 2015
+1%>ubuntu1204-002:[1m~/cs343/a4/a4q1[0m> u__ [K[K++ -O2 -muti[K[Klit[K[Kti -nodebug q1.cc -O[Ko stack
+uC++ Version 6.1.0 (multiple processor) (no debug) (no yield) (no verify) (no profile)
+1%>ubuntu1204-002:[1m~/cs343/a4/a4q1[0m> u++ -O2 -multi -nodebug q1.cc -o stack[1@-[1@D[1@H[1@e[1@a[1@p[P[P[P[1@E[1@A[1@P[1@ q1.cc -o stack[K[K[K[K[Kheap
+uC++ Version 6.1.0 (multiple processor) (no debug) (no yield) (no verify) (no profile)
+1%>ubuntu1204-002:[1m~/cs343/a4/a4q1[0m> u++ -O2 -multi -nodebug -DHEAP q1.cc -o heap[60G[7P[69Gstack[36Gexit[Ktime ./stack 4 10000000000000000[57G[K[36Gls[K/usr/bin/time -f "%Uu %Ss %E" ./heap 10 1000000000000000000[75G[2@00[97G[75G[2P[95G[79G[K[36Gls[K[K[K/ur[Ksr/bin/time -f "\T[Kt%e[KE real, \t%U user, \t %S sys" ./[K/stca[K[Kack 1 2000000000
+	0:07.23 real, 	7.21 user,	0.04 sys
+1%>ubuntu1204-002:[1m~/cs343/a4/a4q1[0m> /usr/bin/time -f "\t%E real, \t%U user,\t%S sys" ./stack 1 2000000000[P[1@2
+	0:08.05 real, 	15.51 user,	0.08 sys
+1%>ubuntu1204-002:[1m~/cs343/a4/a4q1[0m> /usr/bin/time -f "\t%E real, \t%U user,\t%S sys" ./stack 2 2000000000[P[1@4
+	0:07.49 real, 	29.42 user,	0.07 sys
+1%>ubuntu1204-002:[1m~/cs343/a4/a4q1[0m> /usr/bin/time -f "\t%E real, \t%U user,\t%S sys" ./stack 4 2000000000[P[1@1
+	0:07.16 real, 	7.17 user,	0.01 sys
+1%>ubuntu1204-002:[1m~/cs343/a4/a4q1[0m> /usr/bin/time -f "\t%E real, \t%U user,\t%S sys" ./stack 1 2000000000[93G4[105G[P[1@2
+	0:07.71 real, 	15.14 user,	0.07 sys
+1%>ubuntu1204-002:[1m~/cs343/a4/a4q1[0m> /usr/bin/time -f "\t%E real, \t%U user,\t%S sys" ./stack 2 2000000000[P[1@4
+/usr/bin/time: cannot run ./stack42: No such file or directory
+Command exited with non-zero status 127
+	0:00.00 real, 	0.00 user,	0.00 sys
+1%>ubuntu1204-002:[1m~/cs343/a4/a4q1[0m> /usr/bin/time -f "\t%E real, \t%U user,\t%S sys" ./stack42 2000000000[P[P [1@ [1@4
+	0:07.43 real, 	29.41 user,	0.10 sys
+1%>ubuntu1204-002:[1m~/cs343/a4/a4q1[0m> /usr/bin/time -f "\t%E real, \t%U user,\t%S sys" ./stack 4 20000000002[P[1@1k[P[P[P[P[P[1@h[1@e[1@a[1@p
+^CuC++ Runtime error (UNIX pid:14531) Application interrupted by a termination signal.
+Error occurred while executing task uProcessorTask (0x1cac120) in coroutine uProcessorKernel (0x1cb3ca0).
+Command terminated by signal 6
+	2:54.39 real, 	173.85 user,	0.74 sys
+1%>ubuntu1204-002:[1m~/cs343/a4/a4q1[0m> /usr/bin/time -f "\t%E real, \t%U user,\t%S sys" ./heap 1 2000000000[K[K[K
+	0:00.45 real, 	0.44 user,	0.00 sys
+1%>ubuntu1204-002:[1m~/cs343/a4/a4q1[0m> /usr/bin/time -f "\t%E real, \t%U user,\t%S sys" ./heap 1 20000000
+	0:02.78 real, 	2.78 user,	0.00 sys
+1%>ubuntu1204-002:[1m~/cs343/a4/a4q1[0m> /usr/bin/time -f "\t%E real, \t%U user,\t%S sys" ./heap 1 200000000
+	0:28.04 real, 	28.01 user,	0.10 sys
+1%>ubuntu1204-002:[1m~/cs343/a4/a4q1[0m> /usr/bin/time -f "\t%E real, \t%U user,\t%S sys" ./heap 1 200000000[K[K000[87G[1@stack 4[105G[92G42[105G[92G 4[105G[87G[Pheap 1[104G[K00[36G[K/usr/bin/time -f "\t%E real, \t%U user,\t%S sys" ./heap 1 200000000p[P[P[P[P[1@s[1@t[1@a[1@c[1@k
+	0:01.05 real, 	1.05 user,	0.00 sys
+1%>ubuntu1204-002:[1m~/cs343/a4/a4q1[0m> /usr/bin/time -f "\t%E real, \t%U user,\t%S sys" ./stack 1 200000000[P[P[P[P[P[1@h[1@e[1@a[1@p 1[P[1@2
+^CuC++ Runtime error (UNIX pid:18741) Application interrupted by a termination signal.
+Error occurred while executing task uProcessorTask (0x10d2120) in coroutine uProcessorKernel (0x10d9ca0).
+Command terminated by signal 6
+	2:04.74 real, 	248.78 user,	0.62 sys
+1%>ubuntu1204-002:[1m~/cs343/a4/a4q1[0m> /usr/bin/time -f "\t%E real, \t%U user,\t%S sys" ./heap 2 200000000[K[K[K[K[K[K[K[K[K100000000
+	2:35.10 real, 	309.60 user,	0.84 sys
+1%>ubuntu1204-002:[1m~/cs343/a4/a4q1[0m> /usr/bin/time -f "\t%E real, \t%U user,\t%S sys" ./heap 2 100000000[94G2[103G[K
+^CuC++ Runtime error (UNIX pid:28822) Application interrupted by a termination signal.
+Error occurred while executing task uProcessorTask (0x1a60120) in coroutine uProcessorKernel (0x1a67ca0).
+Command terminated by signal 6
+	0:20.34 real, 	40.25 user,	0.12 sys
+1%>ubuntu1204-002:[1m~/cs343/a4/a4q1[0m> /usr/bin/time -f "\t%E real, \t%U user,\t%S sys" ./heap 2 200000000[K
+	0:03.29 real, 	6.48 user,	0.03 sys
+1%>ubuntu1204-002:[1m~/cs343/a4/a4q1[0m> /usr/bin/time -f "\t%E real, \t%U user,\t%S sys" ./heap 2 2000000p[K0
+^CuC++ Runtime error (UNIX pid:33812) Application interrupted by a termination signal.
+Error occurred while executing task uProcessorTask (0x1698120) in coroutine uProcessorKernel (0x169fca0).
+Command terminated by signal 6
+	0:16.78 real, 	33.23 user,	0.09 sys
+1%>ubuntu1204-002:[1m~/cs343/a4/a4q1[0m> /usr/bin/time -f "\t%E real, \t%U user,\t%S sys" ./heap 2 200000002 20000000[K[P[1@8
+	0:11.37 real, 	22.60 user,	0.07 sys
+1%>ubuntu1204-002:[1m~/cs343/a4/a4q1[0m> /usr/bin/time -f "\t%E real, \t%U user,\t%S sys" ./heap 2 8000000[P[1@1 8[P[1@2000000[K[K[K[K[K[K0000000000[K0 2[P[1@1
+	0:12.89 real, 	12.92 user,	0.02 sys
+1%>ubuntu1204-002:[1m~/cs343/a4/a4q1[0m> /usr/bin/time -f "\t%E real, \t%U user,\t%S sys" ./heap 1 1000000001[P[1@4 100
+^CuC++ Runtime error (UNIX pid:35042) Application interrupted by a termination signal.
+Error occurred while executing task uProcessorTask (0x1e0c120) in coroutine uProcessorKernel (0x1e13ca0).
+Command terminated by signal 6
+	0:46.58 real, 	185.61 user,	0.42 sys
+1%>ubuntu1204-002:[1m~/cs343/a4/a4q1[0m> /usr/bin/time -f "\t%E real, \t%U user,\t%S sys" ./heap 4 100000000[K[K1[P[1@2
+	0:05.57 real, 	21.17 user,	0.04 sys
+1%>ubuntu1204-002:[1m~/cs343/a4/a4q1[0m> /usr/bin/time -f "\t%E real, \t%U user,\t%S sys" ./heap 4 2000000[P[1@6
+	0:16.37 real, 	62.11 user,	0.11 sys
+1%>ubuntu1204-002:[1m~/cs343/a4/a4q1[0m> exit
+exit
+
+Script done on Wed Nov 11 13:51:43 2015

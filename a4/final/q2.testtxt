@@ -1,0 +1,309 @@
+UserInterface Test
+============================================
+
+Script started on Tue Nov 10 19:35:20 2015
+1%>ubuntu1204-004:~/cs343/a4/a4q2> ./vote
+Voter0	Voter1	Voter2	Voter3	Voter4	Voter5
+=======	=======	=======	=======	=======	=======
+S						
+V p						
+B 1			S			
+			V p			
+		S	B 2			
+		V s				
+		C				
+...	...	F 0	...	...	...	
+U 1						
+F 0	...	...	...	...	...	
+			U 0			
+...	...	...	F 0	...	...	
+				S		
+				V s		
+				B 1	S	
+					V p	
+	S				B 2	
+	V s					
+	C					
+...	F 1	...	...	...	...	
+				U 1		
+...	...	...	...	F 1	...	
+					U 0	
+...	...	...	...	...	F 1	
+=================
+All tours started
+
+**********************************************************
+*** This is a Test of no parameter to see if the default 
+*** value for the size of tour is 6 and Size of Group is 3
+*** As it can be seen, there are 6 voters and 2 groups of 3
+*** since there are three people with F 0 and 3 with F 0
+**********************************************************
+
+1%>ubuntu1204-004:~/cs343/a4/a4q2> ./vote 1
+size of Tour is smaller than Size of Group
+1%>ubuntu1204-004:~/cs343/a4/a4q2> ./vote 2
+size of Tour is smaller than Size of Group
+***********************************************************
+*******Check to see if you Size Of Tour can be smaller ****
+*******than size of group, which is default in this case***
+***********************************************************
+
+1%>ubuntu1204-004:~/cs343/a4/a4q2> ./vote 4
+group not evenly divisible
+1%>ubuntu1204-004:~/cs343/a4/a4q2> ./vote 5 3
+group not evenly divisible
+1%>ubuntu1204-004:~/cs343/a4/a4q2> ./vote 6 2
+sizeOfGroup not odd
+***************************************************************
+**Check to see if none evenly divisible groups can be formed***
+***************************************************************
+
+1%>ubuntu1204-004:~/cs343/a4/a4q2> ./vote 3
+Voter0	Voter1	Voter2
+=======	=======	=======
+	S		
+	V p		
+	B 1	S	
+		V s	
+S		B 2	
+V s			
+C			
+F 1	...	...	
+	U 1		
+...	F 1	...	
+		U 0	
+...	...	F 1	
+=================
+All tours started
+
+*****************************************************************
+****See if only one valid parameter works. As it can be seen,****
+****it works, and the size of each group defaults to 3
+*****************************************************************
+
+1%>ubuntu1204-004:~/cs343/a4/a4q2> ./vote 4 2
+sizeOfGroup not odd
+*****************************************************************
+****See if only one valid parameter works. As it can be seen,****
+****it works, and the size of each group defaults to 3***********
+*****************************************************************
+
+1%>ubuntu1204-004:~/cs343/a4/a4q2> ./vote 5 5
+Voter0	Voter1	Voter2	Voter3	Voter4
+=======	=======	=======	=======	=======
+S					
+V p					
+B 1		S			
+		V p			
+		B 2		S	
+				V s	
+	S			B 3	
+	V p				
+	B 4		S		
+			V s		
+			C		
+...	...	...	F 0	...	
+U 3					
+F 0	...	...	...	...	
+		U 2			
+...	...	F 0	...	...	
+				U 1	
+...	...	...	...	F 0	
+	U 0				
+...	F 0	...	...	...	
+=================
+All tours started
+
+*****************************************************************
+****Check if seed is not specified still works, and also this****
+****test that all voters belong to the same group. As it can*****
+****be seen, all voter finished with the same result, and each***
+****voter blocked or complete as the final state*****************
+*****************************************************************
+
+1%>ubuntu1204-004:~/cs343/a4/a4q2> ./vote 6 3 2 1
+wrong number of parameter
+1%>ubuntu1204-004:~/cs343/a4/a4q2> ./vote 6 3 2 1 2
+wrong number of parameter
+
+*****************************************************************
+****Testing to see if extra parameter will output a usage error**
+*****************************************************************
+
+1%>ubuntu1204-004:~/cs343/a4/a4q2> ./vote -1 3 2
+paramater 1 error
+1%>ubuntu1204-004:~/cs343/a4/a4q2> ./vote 5 -1 2
+paramater 2 error
+1%>ubuntu1204-004:~/cs343/a4/a4q2> ./vote 5 3 -1
+paramater 3 error
+1%>ubuntu1204-004:~/cs343/a4/a4q2> ./vote 5 -1 -1
+paramater 3 error
+
+*****************************************************************
+*Testing to see if negative parameter will output a usage error**
+*****************************************************************
+
+
+Algorithm Test
+============================================
+
+1%>ubuntu1204-004:~/cs343/a4/a4q2> make vote TYPE=MC
+1%>ubuntu1204-004:~/cs343/a4/a4q2> ./vote 9 3 10
+Voter0	Voter1	Voter2	Voter3	Voter4	Voter5	Voter6	Voter7	Voter8
+=======	=======	=======	=======	=======	=======	=======	=======	=======
+			S						
+			V s						
+			B 1					S	
+								V s	
+	S							B 2	
+	V s								
+	C								
+...	F 1	...	...	...	...	...	...	...	
+			U 1						
+...	...	...	F 1	...	...	...	...	...	
+								U 0	
+...	...	...	...	...	...	...	...	F 1	
+							S		
+							V p		
+S							B 1		
+V s									
+B 2						S			
+						V p			
+						C			
+...	...	...	...	...	...	F 0	...	...	
+							U 1		
+...	...	...	...	...	...	...	F 0	...	
+U 0					S				
+F 0	...	...	...	...	...	...	...	...	
+		S		S	V s				
+		V p			B 1				
+		B 2		V p					
+				C					
+...	...	...	...	F 0	...	...	...	...	
+					U 1				
+...	...	...	...	...	F 0	...	...	...	
+		U 0							
+...	...	F 0	...	...	...	...	...	...	
+=================
+All tours started
+
+
+********************************************************************
+*As it can be seen, the program terminates, suggesting that all*****
+*votes are casted, Each voter that started will vote right after****
+*unless an entire group finish which can context switch and another*
+*voter start before the finish statement is printed. ***************
+*Each vote blocks and output the correct number blocked voters******
+*Each vote unblocks and finishes right after, and the number of*****
+*voters still waiting decrements. The last person output complete***
+*state and Finished. Each finished also puts '...' on all other*****
+*voters. Three individual group are also created, which each group**
+*signal another group to go. No barging is observed because all*****
+*voters in the same group finish before another voter starts********
+*Only three voter are in Start state before a group finish**********
+*****************************************************************
+
+
+1%>ubuntu1204-004:~/cs343/a4/a4q2> make vote TYPE=BAR
+1%>ubuntu1204-004:~/cs343/a4/a4q2> ./vote 9 3 10
+Voter0	Voter1	Voter2	Voter3	Voter4	Voter5	Voter6	Voter7	Voter8
+=======	=======	=======	=======	=======	=======	=======	=======	=======
+			S						
+			V s						
+			B 1					S	
+								V s	
+	S							B 2	
+	V s								
+	C								
+...	F 1	...	...	...	...	...	...	...	
+								U 1	
+...	...	...	...	...	...	...	...	F 1	
+			U 0						
+...	...	...	F 1	...	...	...	...	...	
+							S		
+							V p		
+S							B 1		
+V s									
+B 2						S			
+						V p			
+						C			
+...	...	...	...	...	...	F 0	...	...	
+U 1									
+F 0	...	...	...	...	...	...	...	...	
+					S		U 0		
+...	...	...	...	...	...	...	F 0	...	
+		S		S	V s				
+		V p			B 1				
+		B 2		V p					
+				C					
+...	...	...	...	F 0	...	...	...	...	
+		U 1							
+...	...	F 0	...	...	...	...	...	...	
+					U 0				
+...	...	...	...	...	F 0	...	...	...	
+=================
+All tours started
+
+
+********************************************************************
+*Barrier Produced the identical result as uCondLock, except for*****
+*The unblock order which is the reverse, this is not barging********
+*since the unblocking order does create baring since they all*******
+*********************** belong to the same group********************
+********************************************************************
+
+
+1%>ubuntu1204-004:~/cs343/a4/a4q2>make vote TYPE=SEM
+1%>ubuntu1204-004:~/cs343/a4/a4q2>./vote 9 3 10
+Voter0  Voter1  Voter2  Voter3  Voter4  Voter5  Voter6  Voter7  Voter8
+======= ======= ======= ======= ======= ======= ======= ======= =======
+                        S
+                        V s
+                        B 1                                     S
+                                                                V s
+        S                                                       B 2
+        V s
+        C
+...     F 1     ...     ...     ...     ...     ...     ...     ...
+                        U 1
+...     ...     ...     F 1     ...     ...     ...     ...     ...
+                                                                U 0
+...     ...     ...     ...     ...     ...     ...     ...     F 1
+                                                        S
+                                                        V p
+S                                                       B 1
+V s
+B 2                                             S
+                                                V p
+                                                C
+...     ...     ...     ...     ...     ...     F 0     ...     ...
+                                                        U 1
+...     ...     ...     ...     ...     ...     ...     F 0     ...
+U 0                                     S
+F 0     ...     ...     ...     ...     ...     ...     ...     ...
+                S               S       V s
+                V p                     B 1
+                B 2             V p
+                                C
+...     ...     ...     ...     F 0     ...     ...     ...     ...
+                                        U 1
+...     ...     ...     ...     ...     F 0     ...     ...     ...
+                U 0
+...     ...     F 0     ...     ...     ...     ...     ...     ...
+=================
+All tours started
+
+
+********************************************************************
+*Binary Semaphore Produced the identical result as****************** 
+*uCondLock and Barrier, except for The unblock order which is******* 
+the reverse, this is not barging since the unblocking order does**** 
+create baring since they all belong to the same group***************
+********************************************************************
+
+
+
+1%>ubuntu1204-004:~/cs343/a4/a4q2> exit
+exit
+
+Script done on Tue Nov 10 19:42:02 2015

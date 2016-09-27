@@ -1,0 +1,70 @@
+u++					 -g -multi -Wall -Wno-unused-label -MMD -O2 -D"STACK" -DIMPLTYPE_"MC"   -c -o q2MC.o q2MC.cc
+uC++ Version 6.1.0 (multiple processor) (debug) (no yield) (no verify) (no profile)
+q2MC.cc: In member function 'TallyVotes::Tour TallyVotes::vote(unsigned int, TallyVotes::Tour)':
+q2MC.cc:16:10: error: invalid use of incomplete type 'class Printer'
+   printer.print(id, Voter::States::Vote, ballot);
+          ^
+In file included from q2MC.cc:1:0:
+q2tallyVotes.h:4:8: error: forward declaration of 'class Printer'
+ _Monitor Printer;
+        ^
+q2MC.cc:16:25: error: 'Voter' has not been declared
+   printer.print(id, Voter::States::Vote, ballot);
+                         ^
+q2MC.cc:28:10: error: invalid use of incomplete type 'class Printer'
+    printer.print(id, Voter::States::Complete);
+          ^
+In file included from q2MC.cc:1:0:
+q2tallyVotes.h:4:8: error: forward declaration of 'class Printer'
+ _Monitor Printer;
+        ^
+q2MC.cc:28:25: error: 'Voter' has not been declared
+    printer.print(id, Voter::States::Complete);
+                         ^
+q2MC.cc:29:10: error: invalid use of incomplete type 'class Printer'
+    printer.print(id, Voter::States::Finished, TallyVotes::Tour(picOrStatue < 0 ? 0 : 1) );
+          ^
+In file included from q2MC.cc:1:0:
+q2tallyVotes.h:4:8: error: forward declaration of 'class Printer'
+ _Monitor Printer;
+        ^
+q2MC.cc:29:25: error: 'Voter' has not been declared
+    printer.print(id, Voter::States::Finished, TallyVotes::Tour(picOrStatue < 0 ? 0 : 1) );
+                         ^
+q2MC.cc:36:10: error: invalid use of incomplete type 'class Printer'
+    printer.print(id, Voter::States::Block, curMember);
+          ^
+In file included from q2MC.cc:1:0:
+q2tallyVotes.h:4:8: error: forward declaration of 'class Printer'
+ _Monitor Printer;
+        ^
+q2MC.cc:36:25: error: 'Voter' has not been declared
+    printer.print(id, Voter::States::Block, curMember);
+                         ^
+q2MC.cc:39:10: error: invalid use of incomplete type 'class Printer'
+    printer.print(id, Voter::States::Unblock, (curMember - 1));
+          ^
+In file included from q2MC.cc:1:0:
+q2tallyVotes.h:4:8: error: forward declaration of 'class Printer'
+ _Monitor Printer;
+        ^
+q2MC.cc:39:25: error: 'Voter' has not been declared
+    printer.print(id, Voter::States::Unblock, (curMember - 1));
+                         ^
+q2MC.cc:41:10: error: invalid use of incomplete type 'class Printer'
+    printer.print(id, Voter::States::Finished, TallyVotes::Tour(picOrStatue < 0 ? 0 : 1) );
+          ^
+In file included from q2MC.cc:1:0:
+q2tallyVotes.h:4:8: error: forward declaration of 'class Printer'
+ _Monitor Printer;
+        ^
+q2MC.cc:41:25: error: 'Voter' has not been declared
+    printer.print(id, Voter::States::Finished, TallyVotes::Tour(picOrStatue < 0 ? 0 : 1) );
+                         ^
+q2MC.cc:58:2: error: 'cerr' is not a member of 'std'
+                 std::cerr << "equal votes" << std::endl;
+  ^
+q2MC.cc:58:34: error: 'endl' is not a member of 'std'
+                 std::cerr << "equal votes" << std::endl;
+                                  ^
+make: *** [q2MC.o] Error 1

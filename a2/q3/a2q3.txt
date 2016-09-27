@@ -1,0 +1,52 @@
+(a)
+without compilation flags
+--------------------------
+shared:16881076
+shared:10484848
+shared:16297617
+shared:20000000
+shared:20000000
+shared:13869046
+shared:13376151
+shared:16957919
+shared:16973085
+shared:13644619
+
+
+multi-core result
+--------------------------
+shared:12014737
+shared:10283476
+shared:8729126
+shared:9755825
+shared:10437224
+shared:12152841
+shared:10845623
+shared:10336094
+shared:10848892
+shared:12076804
+
+
+(b)
+it is highly unlikely that the outputs produced the same result because, 
+the two task can run in any other order and interrupt anywhere in between.
+Since the number of iteration is really big, an various number of possible 
+order exist which yields various different values.
+(c)
+largest value : 20000000
+smallest value: 2
+the largest value could only be generated if there was no synchronization issue. 
+Therefore, each task adds and store the value at the correct time.
+the smallest value is generated when task 2 first load the value then task 1 
+increments 9999999 times, then task 2 increment once and stores 1 
+and then task 1 load the value. Task 2 increments the rest iterations(9999999 times). 
+Then task 1 increment once and store 2 in to the final value.
+
+(d)
+The size of value is generally smaller than the multi-core processor, 
+the reason for this is generally because there might be quantum interrupts
+which causes the two tasks to switch more frequently; 
+thus, increase the chance of synchnization issue, which will cause the value to be smaller.
+ 
+
+

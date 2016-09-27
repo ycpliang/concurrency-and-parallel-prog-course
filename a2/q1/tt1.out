@@ -1,0 +1,181 @@
+-1
+THE ITH
+sort0
+The numbered 0
+ 1pivot: 25i: 0
+THE ITH
+sort0
+2 pivot: 25i: 1
+booleans set00
+NOT SENTINEL
+less 
+sort1
+The numbered 1
+ 1pivot: 6i: 2
+THE ITH
+sort0
+NOT SENTINEL
+less 
+sort1
+2 pivot: 6i: 3
+booleans set00
+NOT SENTINEL
+greater 
+sort3
+The numbered 3
+ 1pivot: 8i: 4
+THE ITH
+sort0
+NOT SENTINEL
+less 
+sort1
+NOT SENTINEL
+less 
+sort2
+The numbered 2
+ 1pivot: 5i: 5
+THE ITH
+sort0
+NOT SENTINEL
+greater 
+sort2
+The numbered 2
+ 1pivot: 99i: 6
+THE ITH
+sort0
+NOT SENTINEL
+greater 
+sort2
+2 pivot: 99i: 7
+booleans set00
+NOT SENTINEL
+greater 
+sort4
+The numbered 4
+ 1pivot: 100i: 8
+THE ITH
+sort0
+NOT SENTINEL
+greater 
+sort2
+NOT SENTINEL
+greater 
+sort4
+2 pivot: 100i: 9
+booleans set00
+NOT SENTINEL
+greater 
+sort6
+The numbered 6
+ 1pivot: 101i: 10
+THE ITH
+sort0
+NOT SENTINEL
+less 
+sort1
+NOT SENTINEL
+greater 
+sort3
+2 pivot: 8i: 11
+booleans set00
+NOT SENTINEL
+less 
+sort4
+The numbered 4
+ 1pivot: 7i: 12
+DONE SET
+sort0
+ 2 booleans set2511
+sentinel 
+left sent
+sort1
+ 2 booleans set611
+sentinel 
+left sent
+sort2
+2 pivot: 5i: 13
+booleans set00
+ 2 booleans set500
+sentinel 
+exit
+pppl
+NOT SENTINEL
+less 
+sort4
+2 pivot: 7i: 14
+booleans set00
+NOT SENTINEL
+less 
+sort5
+The numbered 5
+ 1pivot: 7i: 15
+retrieve#3
+OWN VALUE5and # 2
+retrieve#2
+pppl
+NOT SENTINEL
+greater 
+sort4
+NOT SENTINEL
+greater 
+sort6
+2 pivot: 101i: 16
+booleans set00
+NOT SENTINEL
+less 
+sort7
+The numbered 7
+ 1pivot: 101i: 17
+retrieve#2
+NOT SENTINEL
+less 
+sort4
+NOT SENTINEL
+less 
+sort5
+2 pivot: 7i: 18
+booleans set00
+NOT SENTINEL
+less 
+sort6
+The numbered 6
+ 1pivot: 7i: 19
+retrieve#3
+TERMINATING
+retrieve#2
+retrieve#1
+ITH RETRIEVE 0
+NOT SENTINEL
+greater 
+sort4
+NOT SENTINEL
+greater 
+sort6
+NOT SENTINEL
+less 
+sort7
+2 pivot: 101i: 20
+booleans set00
+NOT SENTINEL
+less 
+sort8
+The numbered 8
+ 1pivot: 101i: 21
+retrieve#2
+NOT SENTINEL
+less 
+sort4
+NOT SENTINEL
+less 
+sort5
+NOT SENTINEL
+less 
+sort6
+2 pivot: 7i: 22
+booleans set00
+NOT SENTINEL
+less 
+sort7
+The numbered 7
+ 1pivot: 7i: 23
+retrieve#3

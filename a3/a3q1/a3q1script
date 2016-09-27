@@ -1,0 +1,81 @@
+Script started on Wed Oct 28 16:19:26 2015
+1%>ubuntu1204-002:[1m~/cs343/a3/a3q1[0m> ./mergesort 
+too few parameters
+1%>ubuntu1204-002:[1m~/cs343/a3/a3q1[0m> ./mergesort -t
+too few parameters
+1%>ubuntu1204-002:[1m~/cs343/a3/a3q1[0m> ./mergesort -t[Ks
+too few parameters
+1%>ubuntu1204-002:[1m~/cs343/a3/a3q1[0m> ./mergesort -s 1
+input file incorrect
+1%>ubuntu1204-002:[1m~/cs343/a3/a3q1[0m> ./mergesort -s 1[Ksampe[Kle.in sample.out 4
+too many parameters
+1%>ubuntu1204-002:[1m~/cs343/a3/a3q1[0m> ./mergesort -s sample.in sample.out 4[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kch[K[Kls -l
+total 2860
+-rw-r----- 1 ycpliang cs343      16 Oct 28 16:17 ImplKind
+-rw-r----- 1 ycpliang cs343      13 Oct 28 16:17 ImplType
+-rw-r----- 1 ycpliang cs343    2097 Oct 23 18:03 Makefile
+-rw-r----- 1 ycpliang cs343       0 Oct 28 16:19 a3q1script
+-rw-r----- 1 ycpliang cs343   10427 Oct 28 15:31 error.out
+-rwxr-x--x 1 ycpliang cs343 2414187 Oct 28 16:19 mergesort
+-r--r----- 1 ycpliang cs343       4 Oct 28 16:12 nofileaccess.out
+-rw-r----- 1 ycpliang cs343    3193 Oct 28 16:19 q1.cc
+-rw-r----- 1 ycpliang cs343     889 Oct 28 16:19 q1.d
+-rw-r----- 1 ycpliang cs343     794 Oct 27 15:12 q1.h
+-rw-r----- 1 ycpliang cs343  452088 Oct 28 16:19 q1.o
+-rw-r----- 1 ycpliang cs343     674 Oct 23 19:05 q1.out
+-rw-r----- 1 ycpliang cs343     794 Oct 28 15:16 q1mergesort.h
+-rw-r----- 1 ycpliang cs343      61 Oct 27 12:25 sample.in
+-rw-r----- 1 ycpliang cs343       0 Oct 28 16:14 sample.out
+-rw-r----- 1 ycpliang cs343     235 Oct 28 15:12 sample2.in
+1%>ubuntu1204-002:[1m~/cs343/a3/a3q1[0m> cm[Khmod a-w [Kr sample.in
+1%>ubuntu1204-002:[1m~/cs343/a3/a3q1[0m> chmod a-r sample.in[36Gls -l[K[36G./mergesort -s sample.in sample.out 4[K
+input file incorrect
+1%>ubuntu1204-002:[1m~/cs343/a3/a3q1[0m> ./mergesort -s sample.in sample.outsample.in sample.out[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kchmod a+r sample.in
+1%>ubuntu1204-002:[1m~/cs343/a3/a3q1[0m> chmod a- w sample.out
+1%>ubuntu1204-002:[1m~/cs343/a3/a3q1[0m> chmod a-w sample.out[43G+r sample.in[K[36G./mergesort -s sample.in sample.out
+cannot open outfile
+1%>ubuntu1204-002:[1m~/cs343/a3/a3q1[0m> ./mergesort -s sample.in sample.out[P[P[P[P[P[P[P[P[P[P sample.out[K[K[K[K[K[K[K[K[K[Knewfile
+input file incorrect
+1%>ubuntu1204-002:[1m~/cs343/a3/a3q1[0m> ./mergesort -s newfile[K[K[K[K[K[K[K
+too few parameters
+1%>ubuntu1204-002:[1m~/cs343/a3/a3q1[0m> ./mergesort -s 2[K3
+input file incorrect
+1%>ubuntu1204-002:[1m~/cs343/a3/a3q1[0m> ./mergesort -s 3[K[K[K[K t -t 100 0
+1%>ubuntu1204-002:[1m~/cs343/a3/a3q1[0m> ./mergesort -t 100 0[K1
+1%>ubuntu1204-002:[1m~/cs343/a3/a3q1[0m> ./mergesort -t 100 1[K[K[K[K[Ks sm[Kampel2[K[K[Kl2[Ke2.in
+25 6 8 -5 99 100 101 7 
+-5 6 7 8 25 99 100 101 
+
+1 -3 5 
+-3 1 5 
+
+
+
+
+9 8 7 6 5 4 3 2 1 0 
+0 1 2 3 4 5 6 7 8 9 
+
+60 59 58 57 56 55 54 53 52 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0 
+0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 
+
+1%>ubuntu1204-002:[1m~/cs343/a3/a3q1[0m> ./mergesort -s sample2.in sample.out[1@2
+1%>ubuntu1204-002:[1m~/cs343/a3/a3q1[0m> cat sampel[K[Kle2.out
+25 6 8 -5 99 100 101 7 
+-5 6 7 8 25 99 100 101 
+
+1 -3 5 
+-3 1 5 
+
+
+
+
+9 8 7 6 5 4 3 2 1 0 
+0 1 2 3 4 5 6 7 8 9 
+
+60 59 58 57 56 55 54 53 52 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0 
+0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 
+
+1%>ubuntu1204-002:[1m~/cs343/a3/a3q1[0m> exit
+exit
+
+Script done on Wed Oct 28 16:23:17 2015

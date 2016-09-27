@@ -1,0 +1,8 @@
+u++					 -g -multi -Wall -Wno-unused-label -MMD -O2 -DTYPE="int" -DBTYPE="int" -DSENTINEL="-1" -D"NOBUSY"    -c -o q1.o q1.cc
+uC++ Version 6.1.0 (multiple processor) (debug) (no yield) (no verify) (no profile)
+u++					 -g -multi -Wall -Wno-unused-label -MMD -O2 -DTYPE="int" -DBTYPE="int" -DSENTINEL="-1" -D"NOBUSY"  q1.o -o mergesort
+uC++ Version 6.1.0 (multiple processor) (debug) (no yield) (no verify) (no profile)
+u++					 -g -multi -Wall -Wno-unused-label -MMD -O2 -DTYPE="int" -DBTYPE="int" -DSENTINEL="-1" -D"NOBUSY"   -o buffer
+uC++ Version 6.1.0 (multiple processor) (debug) (no yield) (no verify) (no profile)
+u++ error, no input files
+make: *** [buffer] Error 1
